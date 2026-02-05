@@ -33,8 +33,11 @@ export default function Home() {
           </div>
 
           <div className="bg-[var(--black)] text-[var(--cream)] p-6 md:p-8 shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
-            <p className="text-sm md:text-base tracking-wide">
-              Our new website is launching soon. For inquiries, please reach out directly.
+            <p className="text-sm md:text-base tracking-wide mb-4">
+              Our new website is launching soon.
+            </p>
+            <p className="text-sm text-[var(--accent-yellow)] tracking-wide">
+              For inquiries, please contact us directly.
             </p>
           </div>
         </div>
