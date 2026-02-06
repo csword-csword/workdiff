@@ -25,12 +25,12 @@ export default function Home() {
         </div>
 
         {/* Text content - center column */}
-        <div className="text-column text-right">
+        <div className="text-column">
           <h1 className="font-[var(--font-playfair)] text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-[var(--black)] mb-10 tracking-tight">
             Here's to the <span className="text-[var(--accent-red)] italic">crazy ones</span>
           </h1>
 
-          <div className="space-y-6 text-lg md:text-xl text-[var(--charcoal)] leading-relaxed">
+          <div className="space-y-6 text-lg md:text-xl text-[var(--charcoal)] leading-relaxed text-justify">
             <p>
               Apple's iconic "Think Different" campaign and the "Here's to the crazy ones" speech inspired the founding of Work Different in 2013. We believed then - and believe even more strongly now - that scaling go-to-market strategies requires creativity, bold thinking and a willingness to challenge conventional wisdom.
             </p>
