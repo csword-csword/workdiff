@@ -32,7 +32,7 @@ export default function Home() {
 
           <div className="space-y-6 text-lg md:text-xl text-[var(--charcoal)] leading-relaxed">
             <p>
-              Apple's iconic "Think Different" campaign and the "Here's to the crazy ones" speech inspired the founding of Work Different in 2013. We believed then - and believe even more strongly now - that scaling go-to-market strategies requires creativity, bold thinking, and a willingness to challenge conventional wisdom.
+              Apple's iconic "Think Different" campaign and the "Here's to the crazy ones" speech inspired the founding of Work Different in 2013. We believed then - and believe even more strongly now - that scaling go-to-market strategies requires creativity, bold thinking and a willingness to challenge conventional wisdom.
             </p>
 
             <br />
@@ -40,6 +40,8 @@ export default function Home() {
             <p>
               Today, with AI transforming how businesses operate and compete, thinking differently isn't just inspiring - it's imperative. The technology companies that will thrive are those that embrace new ways of building, scaling, and supporting their GTM teams.
             </p>
+
+            <br />
 
             <p className="font-semibold text-[var(--black)] text-xl md:text-2xl">
               We help early-stage B2B technology companies work different.
