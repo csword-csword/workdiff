@@ -73,6 +73,12 @@ body::before {
   }
 }
 
+.brand-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
 .brand {
   font-family: var(--font-bebas), sans-serif;
   font-size: 2.5rem;
@@ -158,11 +164,19 @@ body::before {
   color: var(--slate);
   font-weight: 600;
   white-space: nowrap;
+  line-height: 1.2;
 }
 
 @media (min-width: 768px) {
   .tagline {
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tagline {
+    font-size: 0.875rem;
     letter-spacing: 0.1875rem;
   }
 }
@@ -293,8 +307,12 @@ body::before {
     padding: 1rem 2rem;
   }
 
+  .brand-container {
+    gap: 0.125rem;
+  }
+
   .brand {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .nav-links {
@@ -302,7 +320,7 @@ body::before {
   }
 
   .tagline {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
   }
 
   /* Stack homepage layout on mobile */

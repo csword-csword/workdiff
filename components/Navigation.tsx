@@ -10,9 +10,12 @@ export default function Navigation() {
 
   return (
     <header className="masthead">
-      <Link href="/" className="brand">
-        Work Different
-      </Link>
+      <div className="brand-container">
+        <Link href="/" className="brand">
+          Work Different
+        </Link>
+        <div className="tagline">GTM Advisory Services</div>
+      </div>
       <nav className="nav-links">
         <div
           className="nav-link-wrapper"
@@ -43,7 +46,6 @@ export default function Navigation() {
           About
         </Link>
       </nav>
-      <div className="tagline">GTM Advisory Services</div>
     </header>
   );
 }
