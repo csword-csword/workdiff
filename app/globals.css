@@ -321,12 +321,16 @@ body::before {
 .three-column-layout {
   display: flex;
   gap: 48px;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .poster-column {
   width: 300px;
   flex-shrink: 0;
+}
+
+.poster-column > div {
+  height: 100%;
 }
 
 .text-column {
@@ -336,6 +340,12 @@ body::before {
 .sidebar-column {
   width: 280px;
   flex-shrink: 0;
+}
+
+.sidebar-column > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Investors page split layout */
