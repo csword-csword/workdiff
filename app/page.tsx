@@ -51,44 +51,44 @@ export default function Home() {
 
         {/* Target Market sidebar - right column */}
         <div className="sidebar-column">
-          <div className="bg-[var(--black)] text-[var(--cream)] p-6 shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
-            <h2 className="font-[var(--font-bebas)] text-2xl tracking-wider mb-4 text-[var(--accent-yellow)] uppercase">
+          <div className="bg-[var(--black)] text-[var(--cream)] p-8 shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
+            <h2 className="font-[var(--font-bebas)] text-2xl tracking-wider mb-6 text-[var(--accent-yellow)] uppercase">
               Target Market
             </h2>
-            <div className="space-y-4 text-sm">
+            <div className="space-y-5 text-sm">
               <div>
-                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-1 font-semibold">
+                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
                   Stage
                 </h3>
-                <p className="leading-snug">$0-20MM ARR</p>
+                <p className="leading-relaxed">$0-20MM ARR</p>
               </div>
               <div>
-                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-1 font-semibold">
+                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
                   Market
                 </h3>
-                <p className="leading-snug">Enterprise</p>
+                <p className="leading-relaxed">Enterprise</p>
               </div>
               <div>
-                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-1 font-semibold">
+                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
                   Domain
                 </h3>
-                <p className="leading-snug">
+                <p className="leading-relaxed">
                   SDLC, Infrastructure, Cybersecurity, AI, FinTech
                 </p>
               </div>
               <div>
-                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-1 font-semibold">
+                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
                   Verticals
                 </h3>
-                <p className="leading-snug">
+                <p className="leading-relaxed">
                   Banking, Insurance, Financial Services, Pharma, Automotive
                 </p>
               </div>
               <div>
-                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-1 font-semibold">
+                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
                   Regions
                 </h3>
-                <p className="leading-snug">NA, EMEA, APAC</p>
+                <p className="leading-relaxed">NA, EMEA, APAC</p>
               </div>
             </div>
           </div>
