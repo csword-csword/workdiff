@@ -1,4 +1,10 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Investors() {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   const services = [
     {
       title: "Sales Process & Efficiency Assessment",
@@ -49,22 +55,35 @@ export default function Investors() {
 
   return (
     <main style={{ maxWidth: '1000px', margin: '0 auto', padding: '64px 64px' }}>
-      {/* Services stacked vertically for better readability */}
-      <div className="space-y-8">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] p-8 relative"
-          >
-            <div className="absolute top-0 left-0 w-full h-[5px]" style={{ backgroundColor: service.color }} />
-            <h2 className="font-[var(--font-bebas)] text-2xl md:text-3xl tracking-wider mb-4 text-[var(--black)] uppercase border-b-2 border-[var(--black)] pb-3">
-              {service.title}
-            </h2>
-            <p className="text-base md:text-lg text-[var(--charcoal)] leading-relaxed">
-              {service.description}
-            </p>
-          </div>
-        ))}
+      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] p-8 relative">
+        <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-red)]" />
+        <ul className="space-y-3">
+          {services.map((service, index) => (
+            <li
+              key={index}
+              className="relative"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <div className="flex items-start cursor-pointer">
+                <span style={{ color: service.color }} className="mr-3 text-xl">—</span>
+                <span className="text-[var(--charcoal)] text-base md:text-lg hover:text-[var(--black)] transition-colors">
+                  {service.title}
+                </span>
+              </div>
+              {hoveredIndex === index && (
+                <div
+                  className="absolute left-0 top-full mt-2 bg-white border-3 border-[var(--black)] shadow-[4px_4px_0_var(--black)] p-6 z-10"
+                  style={{ width: '600px', maxWidth: '90vw' }}
+                >
+                  <p className="text-[var(--charcoal)] text-sm md:text-base leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
       </div>
     </main>
   );
