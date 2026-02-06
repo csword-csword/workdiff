@@ -57,33 +57,31 @@ export default function Investors() {
     <main style={{ maxWidth: '1000px', margin: '0 auto', padding: '64px 64px' }}>
       <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] p-8 relative">
         <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-red)]" />
-        <ul className="space-y-3">
+        <div className="space-y-3">
           {services.map((service, index) => (
-            <li
+            <div
               key={index}
-              className="relative"
+              className="relative flex items-start"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <div className="flex items-start cursor-pointer">
-                <span style={{ color: service.color }} className="mr-3 text-xl">—</span>
-                <span className="text-[var(--charcoal)] text-base md:text-lg hover:text-[var(--black)] transition-colors">
-                  {service.title}
-                </span>
-              </div>
+              <span style={{ color: service.color }} className="mr-3 text-xl">—</span>
+              <span className="text-[var(--charcoal)] text-base md:text-lg hover:text-[var(--black)] transition-colors cursor-pointer">
+                {service.title}
+              </span>
               {hoveredIndex === index && (
                 <div
-                  className="absolute left-0 top-full mt-2 bg-white border-3 border-[var(--black)] shadow-[4px_4px_0_var(--black)] p-6 z-10"
-                  style={{ width: '600px', maxWidth: '90vw' }}
+                  className="absolute left-full ml-8 top-0 bg-white border-3 border-[var(--black)] shadow-[4px_4px_0_var(--black)] p-6 z-10"
+                  style={{ width: '500px', maxWidth: '90vw' }}
                 >
                   <p className="text-[var(--charcoal)] text-sm md:text-base leading-relaxed">
                     {service.description}
                   </p>
                 </div>
               )}
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </main>
   );
