@@ -55,11 +55,11 @@ export default function Investors() {
 
   return (
     <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '64px 64px' }}>
-      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ display: 'flex', minHeight: '400px' }}>
+      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative investors-layout">
         <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-red)]" />
 
         {/* Left side: Service titles */}
-        <div style={{ width: '45%', padding: '3rem 2rem', borderRight: '2px solid var(--black)' }}>
+        <div className="investors-titles">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {services.map((service, index) => (
               <div
@@ -68,7 +68,7 @@ export default function Investors() {
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <span style={{ color: service.color }} className="mr-3 text-xl">—</span>
+                <span style={{ color: service.color }} className="mr-4 text-xl flex-shrink-0">—</span>
                 <span className={`text-base md:text-lg transition-colors cursor-pointer ${hoveredIndex === index ? 'text-[var(--black)] font-semibold' : 'text-[var(--charcoal)]'}`}>
                   {service.title}
                 </span>
@@ -78,7 +78,7 @@ export default function Investors() {
         </div>
 
         {/* Right side: Description display */}
-        <div style={{ width: '55%', padding: '3rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div className="investors-description">
           {hoveredIndex !== null ? (
             <p className="text-[var(--charcoal)] text-base leading-relaxed">
               {services[hoveredIndex].description}

@@ -299,6 +299,26 @@ body::before {
   flex: 1;
 }
 
+/* Investors page split layout */
+.investors-layout {
+  display: flex;
+  min-height: 400px;
+}
+
+.investors-titles {
+  width: 45%;
+  padding: 3rem 2rem;
+  border-right: 2px solid var(--black);
+}
+
+.investors-description {
+  width: 55%;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .masthead {
@@ -338,5 +358,24 @@ body::before {
 
   .text-column {
     width: 100%;
+  }
+
+  /* Stack investors layout on mobile */
+  .investors-layout {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .investors-titles {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid var(--black);
+    padding: 2rem 1.5rem;
+  }
+
+  .investors-description {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    min-height: 200px;
   }
 }
