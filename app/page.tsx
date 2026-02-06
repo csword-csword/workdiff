@@ -44,7 +44,7 @@ export default function Home() {
             <br />
 
             <p className="font-semibold text-[var(--black)] text-xl md:text-2xl">
-              We help early-stage B2B technology companies work different.
+              We help early-stage B2B technology companies <strong>WORK DIFFERENT</strong>.
             </p>
           </div>
 
