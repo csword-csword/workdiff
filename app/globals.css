@@ -283,8 +283,8 @@ body::before {
   }
 }
 
-/* Homepage two-column layout */
-.two-column-layout {
+/* Homepage three-column layout */
+.three-column-layout {
   display: flex;
   gap: 48px;
   align-items: flex-start;
@@ -297,6 +297,11 @@ body::before {
 
 .text-column {
   flex: 1;
+}
+
+.sidebar-column {
+  width: 280px;
+  flex-shrink: 0;
 }
 
 /* Investors page split layout */
@@ -380,7 +385,7 @@ body::before {
   }
 
   /* Stack homepage layout on mobile */
-  .two-column-layout {
+  .three-column-layout {
     flex-direction: column;
     gap: 2rem;
   }
@@ -392,6 +397,10 @@ body::before {
   }
 
   .text-column {
+    width: 100%;
+  }
+
+  .sidebar-column {
     width: 100%;
   }
 

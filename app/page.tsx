@@ -6,8 +6,8 @@ export default function Home() {
       {/* Decorative line */}
       <div className="h-1 w-40 bg-[var(--accent-red)] mb-12 animate-[expandLine_1s_ease-out_0.5s_both]" />
 
-      {/* Two-column layout: poster left, text right on desktop; stacked on mobile */}
-      <div className="two-column-layout animate-[slideUp_0.8s_ease-out_0.2s_both]">
+      {/* Three-column layout: poster left, text center, sidebar right on desktop; stacked on mobile */}
+      <div className="three-column-layout animate-[slideUp_0.8s_ease-out_0.2s_both]">
         {/* Poster artwork - left column */}
         <div className="poster-column">
           <div className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-4 relative">
@@ -24,7 +24,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Text content - right column */}
+        {/* Text content - center column */}
         <div className="text-column">
           <h1 className="font-[var(--font-playfair)] text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-[var(--black)] mb-10 tracking-tight">
             Here's to the <span className="text-[var(--accent-red)] italic">crazy ones</span>
@@ -46,6 +46,51 @@ export default function Home() {
             <p className="font-semibold text-[var(--black)] text-xl md:text-2xl">
               We help early-stage B2B technology companies work different.
             </p>
+          </div>
+        </div>
+
+        {/* Target Market sidebar - right column */}
+        <div className="sidebar-column">
+          <div className="bg-[var(--black)] text-[var(--cream)] p-6 shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
+            <h2 className="font-[var(--font-bebas)] text-2xl tracking-wider mb-4 text-[var(--accent-yellow)] uppercase">
+              Target Market
+            </h2>
+            <div className="space-y-4 text-sm">
+              <div>
+                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-1 font-semibold">
+                  Stage
+                </h3>
+                <p className="leading-snug">$0-20MM ARR</p>
+              </div>
+              <div>
+                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-1 font-semibold">
+                  Market
+                </h3>
+                <p className="leading-snug">Enterprise</p>
+              </div>
+              <div>
+                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-1 font-semibold">
+                  Domain
+                </h3>
+                <p className="leading-snug">
+                  SDLC, Infrastructure, Cybersecurity, AI, FinTech
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-1 font-semibold">
+                  Verticals
+                </h3>
+                <p className="leading-snug">
+                  Banking, Insurance, Financial Services, Pharma, Automotive
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-1 font-semibold">
+                  Regions
+                </h3>
+                <p className="leading-snug">NA, EMEA, APAC</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
