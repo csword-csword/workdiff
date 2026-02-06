@@ -18,7 +18,7 @@ export default function Blog() {
               <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-blue)]" />
 
               <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-4 group-hover:text-[var(--accent-blue)] transition-colors">
-                AI Coding Tools Are the New Distribution Channel
+                The AI Agent Is The New Buyer
               </h2>
 
               <p className="text-[var(--charcoal)] leading-relaxed mb-4">

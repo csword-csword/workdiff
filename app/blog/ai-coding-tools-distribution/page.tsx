@@ -16,7 +16,7 @@ export default function AICodingToolsArticle() {
         />
 
         <h1 className="font-[var(--font-bebas)] text-5xl tracking-wider text-[var(--black)] uppercase" style={{ marginBottom: '1rem', lineHeight: '1.1' }}>
-          AI Coding Tools Are the New Distribution Channel. Is Your GTM Strategy Ready?
+          The AI Agent Is The New Buyer
         </h1>
 
         <p className="text-[var(--slate)] text-sm mb-8">By Charles Sword</p>
