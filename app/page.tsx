@@ -1,60 +1,44 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center px-4 md:px-16 py-16 animate-[fadeIn_0.8s_ease-out]">
-      <div className="max-w-6xl w-full">
+    <main className="min-h-screen flex items-center justify-center px-4 md:px-16 animate-[fadeIn_0.8s_ease-out]">
+      <div className="max-w-4xl w-full">
         {/* Decorative line */}
         <div className="h-1 w-40 bg-[var(--accent-red)] mb-12 animate-[expandLine_1s_ease-out_0.5s_both]" />
 
-        {/* Main content layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start animate-[slideUp_0.8s_ease-out_0.2s_both]">
-          {/* Left side - Text content */}
-          <div>
-            <h1 className="font-[var(--font-playfair)] text-5xl md:text-7xl font-black leading-tight text-[var(--black)] mb-8 tracking-tight">
-              Think <span className="text-[var(--accent-red)] italic">Different</span> About Go-to-Market
-            </h1>
+        {/* Main content */}
+        <div className="animate-[slideUp_0.8s_ease-out_0.2s_both]">
+          <h1 className="font-[var(--font-playfair)] text-6xl md:text-8xl lg:text-9xl font-black leading-none text-[var(--black)] mb-8 tracking-tight">
+            Coming <span className="text-[var(--accent-red)] italic">Soon</span>
+          </h1>
 
-            <div className="space-y-6 text-base md:text-lg text-[var(--charcoal)] leading-relaxed">
-              <p>
-                In 1997, Apple challenged the world to celebrate those who see things differently. That campaign inspired us to launch Work Different in 2013—with a mission to bring fresh thinking to how early-stage technology companies build and scale their go-to-market strategies.
-              </p>
+          <div className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-8 md:p-12 mb-8">
+            <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-blue)]" />
 
-              <p>
-                We believed then, as we do now, that the best GTM strategies don't follow conventional playbooks. They're built by those willing to question the status quo, challenge assumptions, and forge new paths.
-              </p>
+            <h2 className="font-[var(--font-bebas)] text-3xl md:text-4xl tracking-wider mb-6 text-[var(--black)] uppercase leading-none">
+              Work Different
+            </h2>
 
-              <p>
-                Today, AI has made thinking differently not just inspirational—it's imperative. The tools, tactics, and strategies that worked yesterday won't be enough tomorrow. Success requires reimagining how we approach marketing, sales, customer success, and channels from the ground up.
-              </p>
+            <p className="text-lg md:text-xl text-[var(--charcoal)] leading-relaxed mb-6">
+              Go-to-Market advisory services for investors and portfolio companies.
+            </p>
 
-              <p className="font-semibold">
-                At Work Different, we partner with investors and portfolio companies to do exactly that: bring operator expertise and unconventional thinking to the companies bold enough to change their industries.
+            <div className="space-y-4 text-base md:text-lg text-[var(--charcoal)]">
+              <p className="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-[var(--accent-red)] before:font-semibold">
+                <strong>Investors:</strong> Comprehensive GTM due diligence services
               </p>
-            </div>
-
-            <div className="mt-8 bg-[var(--black)] text-[var(--cream)] p-6 shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
-              <p className="text-sm tracking-wide mb-3">
-                Our new website is launching soon.
-              </p>
-              <p className="text-sm text-[var(--accent-yellow)] tracking-wide">
-                For inquiries, please contact us directly.
+              <p className="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-[var(--accent-blue)] before:font-semibold">
+                <strong>Portfolio Companies:</strong> Embedded operator expertise for early stage B2B technology
               </p>
             </div>
           </div>
 
-          {/* Right side - Poster image */}
-          <div className="flex justify-center lg:justify-end animate-[slideLeft_0.8s_ease-out_0.6s_both]">
-            <div className="relative border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] bg-white p-4">
-              <Image
-                src="/images/IMG_0031.jpeg"
-                alt="Think Different - Iconic campaign poster"
-                width={500}
-                height={700}
-                className="w-full h-auto"
-                priority
-              />
-            </div>
+          <div className="bg-[var(--black)] text-[var(--cream)] p-6 md:p-8 shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
+            <p className="text-sm md:text-base tracking-wide mb-4">
+              Our new website is launching soon.
+            </p>
+            <p className="text-sm text-[var(--accent-yellow)] tracking-wide">
+              For inquiries, please contact us directly.
+            </p>
           </div>
         </div>
       </div>
