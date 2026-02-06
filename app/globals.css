@@ -51,10 +51,12 @@ body::before {
   left: 0;
   right: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   border-bottom: 3px solid var(--black);
-  padding: 1rem 3.75rem 0.9375rem;
+  padding: 1rem 2rem 0.9375rem;
   background: var(--cream);
   z-index: 50;
   animation: slideDown 0.6s ease-out;
@@ -73,13 +75,20 @@ body::before {
 
 .brand {
   font-family: var(--font-bebas), sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   letter-spacing: 0.25rem;
   color: var(--black);
   text-transform: uppercase;
   line-height: 1;
   text-decoration: none;
   transition: color 0.2s;
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .brand {
+    font-size: 3.5rem;
+  }
 }
 
 .brand:hover {
@@ -88,19 +97,40 @@ body::before {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-links {
+    gap: 2rem;
+  }
 }
 
 .nav-link {
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.1875rem;
+  letter-spacing: 0.1rem;
   color: var(--slate);
   font-weight: 600;
   text-decoration: none;
   transition: color 0.2s;
   position: relative;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: 0.8125rem;
+    letter-spacing: 0.1875rem;
+  }
 }
 
 .nav-link:hover {
@@ -122,11 +152,19 @@ body::before {
 }
 
 .tagline {
-  font-size: 0.8125rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
-  letter-spacing: 0.1875rem;
+  letter-spacing: 0.1rem;
   color: var(--slate);
   font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .tagline {
+    font-size: 0.8125rem;
+    letter-spacing: 0.1875rem;
+  }
 }
 
 /* Animations */
