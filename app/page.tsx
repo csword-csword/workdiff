@@ -1,44 +1,48 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center px-4 md:px-16 animate-[fadeIn_0.8s_ease-out]">
-      <div className="max-w-4xl w-full">
+    <main className="min-h-screen px-4 md:px-16 py-16 animate-[fadeIn_0.8s_ease-out]">
+      <div className="max-w-6xl mx-auto">
         {/* Decorative line */}
         <div className="h-1 w-40 bg-[var(--accent-red)] mb-12 animate-[expandLine_1s_ease-out_0.5s_both]" />
 
-        {/* Main content */}
-        <div className="animate-[slideUp_0.8s_ease-out_0.2s_both]">
-          <h1 className="font-[var(--font-playfair)] text-6xl md:text-8xl lg:text-9xl font-black leading-none text-[var(--black)] mb-8 tracking-tight">
-            Coming <span className="text-[var(--accent-red)] italic">Soon</span>
-          </h1>
+        {/* Main content - stacked layout */}
+        <div className="animate-[slideUp_0.8s_ease-out_0.2s_both] space-y-12">
+          {/* Text content */}
+          <div className="max-w-4xl">
+            <h1 className="font-[var(--font-playfair)] text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-[var(--black)] mb-8 tracking-tight">
+              Here's to the <span className="text-[var(--accent-red)] italic">crazy ones</span>
+            </h1>
 
-          <div className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-8 md:p-12 mb-8">
-            <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-blue)]" />
-
-            <h2 className="font-[var(--font-bebas)] text-3xl md:text-4xl tracking-wider mb-6 text-[var(--black)] uppercase leading-none">
-              Work Different
-            </h2>
-
-            <p className="text-lg md:text-xl text-[var(--charcoal)] leading-relaxed mb-6">
-              Go-to-Market advisory services for investors and portfolio companies.
-            </p>
-
-            <div className="space-y-4 text-base md:text-lg text-[var(--charcoal)]">
-              <p className="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-[var(--accent-red)] before:font-semibold">
-                <strong>Investors:</strong> Comprehensive GTM due diligence services
+            <div className="space-y-6 text-lg md:text-xl text-[var(--charcoal)] leading-relaxed">
+              <p>
+                Apple's iconic "Think Different" campaign and the "Here's to the crazy ones" speech inspired the founding of Work Different in 2013. We believed then—and believe even more strongly now—that scaling go-to-market strategies requires creativity, bold thinking, and a willingness to challenge conventional wisdom.
               </p>
-              <p className="pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-[var(--accent-blue)] before:font-semibold">
-                <strong>Portfolio Companies:</strong> Embedded operator expertise for early stage B2B technology
+
+              <p>
+                Today, with AI transforming how businesses operate and compete, thinking differently isn't just inspiring—it's imperative. The technology companies that will thrive are those that embrace new ways of building, scaling, and supporting their GTM teams.
+              </p>
+
+              <p className="font-semibold text-[var(--black)]">
+                We help early-stage B2B technology companies work different.
               </p>
             </div>
           </div>
 
-          <div className="bg-[var(--black)] text-[var(--cream)] p-6 md:p-8 shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
-            <p className="text-sm md:text-base tracking-wide mb-4">
-              Our new website is launching soon.
-            </p>
-            <p className="text-sm text-[var(--accent-yellow)] tracking-wide">
-              For inquiries, please contact us directly.
-            </p>
+          {/* Poster artwork */}
+          <div className="max-w-4xl">
+            <div className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-6 md:p-8">
+              <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-blue)]" />
+              <Image
+                src="/images/IMG_0031.jpeg"
+                alt="Think Different - Apple Campaign Poster"
+                width={1200}
+                height={1600}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
