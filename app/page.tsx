@@ -1,6 +1,11 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <main style={{ maxWidth: '1152px', margin: '0 auto', padding: '64px 64px' }} className="animate-[fadeIn_0.8s_ease-out]">
       {/* Decorative line */}
@@ -10,7 +15,10 @@ export default function Home() {
       <div className="three-column-layout animate-[slideUp_0.8s_ease-out_0.2s_both]">
         {/* Poster artwork - left column */}
         <div className="poster-column">
-          <div className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-4 relative">
+          <div
+            className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-4 relative cursor-pointer hover:shadow-[10px_10px_0_var(--black)] transition-shadow"
+            onClick={() => setIsModalOpen(true)}
+          >
             <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-yellow)]" />
             <Image
               src="/images/IMG_0031.jpeg"
@@ -114,6 +122,31 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Image Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-[200] p-8 cursor-pointer"
+          onClick={() => setIsModalOpen(false)}
+        >
+          <div className="relative max-w-4xl max-h-[90vh]">
+            <button
+              className="absolute -top-12 right-0 text-white text-4xl font-bold hover:text-[var(--accent-red)] transition-colors"
+              onClick={() => setIsModalOpen(false)}
+            >
+              ×
+            </button>
+            <Image
+              src="/images/IMG_0031.jpeg"
+              alt="Think Different - Apple Campaign Poster"
+              width={800}
+              height={1067}
+              className="w-auto h-auto max-w-full max-h-[90vh] object-contain"
+              quality={100}
+            />
+          </div>
+        </div>
+      )}
     </main>
   );
 }
