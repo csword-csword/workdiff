@@ -1,3 +1,4 @@
+// About page with company information and achievements
 export default function About() {
   return (
     <main style={{ maxWidth: '900px', margin: '0 auto', padding: '64px 64px' }}>
