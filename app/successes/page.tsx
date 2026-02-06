@@ -1,94 +1,38 @@
+import Image from "next/image";
+
 export default function Successes() {
-  const clients = [
-    { name: "Othello", category: "Sales Productivity" },
-    { name: "Control Plane", category: "Cloud Management" },
-    { name: "Temelio", category: "Grants Management" },
-    { name: "Sedai", category: "Cloud Management" },
-    { name: "Sigma360", category: "KYC/AML" },
-    { name: "ExecAtlas", category: "CRM Data Services" },
-    { name: "Insait", category: "FinTech" },
+  const logos = [
+    { name: "UP", file: "UP.png" },
+    { name: "BP", file: "bp.png" },
+    { name: "Cast", file: "cast.png" },
+    { name: "iRise", file: "irise.png" },
+    { name: "Prove", file: "prove.png" },
   ];
 
   return (
-    <main className="container mx-auto px-4 md:px-16 py-16">
-      <div className="h-1 w-40 bg-[var(--accent-red)] mb-8 animate-[expandLine_1s_ease-out_both]" />
+    <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '64px 64px' }}>
+      <div className="h-1 w-40 bg-[var(--accent-red)] mb-12 animate-[expandLine_1s_ease-out_0.5s_both]" />
 
-      <h1 className="font-[var(--font-playfair)] text-6xl md:text-8xl font-black leading-none text-[var(--black)] mb-6 tracking-tight">
-        Client <span className="text-[var(--accent-yellow)] italic">Successes</span>
-      </h1>
+      <div className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-12 relative">
+        <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-blue)]" />
 
-      <div className="max-w-4xl">
-        <p className="text-lg text-[var(--charcoal)] leading-relaxed mb-12">
-          We've partnered with leading B2B technology companies to drive go-to-market excellence and accelerate growth.
-        </p>
+        <h2 className="font-[var(--font-bebas)] text-4xl tracking-wider mb-10 text-[var(--black)] uppercase text-center">
+          Client Successes
+        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          {clients.map((client, idx) => (
-            <div
-              key={idx}
-              className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] p-6 transition-all duration-300 hover:translate-x-[-3px] hover:translate-y-[-3px] hover:shadow-[9px_9px_0_var(--black)]"
-            >
-              <div
-                className={`absolute top-0 left-0 w-full h-[5px] ${
-                  idx % 4 === 0
-                    ? "bg-[var(--accent-red)]"
-                    : idx % 4 === 1
-                    ? "bg-[var(--accent-blue)]"
-                    : idx % 4 === 2
-                    ? "bg-[var(--accent-yellow)]"
-                    : "bg-[var(--slate)]"
-                }`}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
+          {logos.map((logo, idx) => (
+            <div key={idx} className="flex items-center justify-center p-4">
+              <Image
+                src={`/images/${logo.file}`}
+                alt={logo.name}
+                width={120}
+                height={60}
+                className="object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                style={{ width: 'auto', height: 'auto', maxWidth: '120px', maxHeight: '60px' }}
               />
-              <h3 className="font-[var(--font-bebas)] text-2xl tracking-wider text-[var(--black)] uppercase mb-2">
-                {client.name}
-              </h3>
-              <p className="text-sm text-[var(--slate)] tracking-wide">
-                {client.category}
-              </p>
             </div>
           ))}
-        </div>
-
-        <div className="bg-[var(--black)] text-[var(--cream)] p-8 shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
-          <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider mb-4 text-[var(--accent-yellow)] uppercase">
-            Target Market
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Stage
-              </h3>
-              <p className="leading-snug">$0-20MM ARR</p>
-            </div>
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Market
-              </h3>
-              <p className="leading-snug">Enterprise</p>
-            </div>
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Domain
-              </h3>
-              <p className="leading-snug">
-                SDLC, Infrastructure, Cybersecurity, AI, FinTech
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Verticals
-              </h3>
-              <p className="leading-snug">
-                Banking, Insurance, Financial Services, Pharma, Automotive
-              </p>
-            </div>
-            <div className="md:col-span-2">
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Regions
-              </h3>
-              <p className="leading-snug">NA, EMEA, APAC</p>
-            </div>
-          </div>
         </div>
       </div>
     </main>
