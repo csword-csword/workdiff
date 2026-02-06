@@ -2,20 +2,20 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center px-4 py-16 animate-[fadeIn_0.8s_ease-out]">
-      <div className="w-full" style={{ maxWidth: "1400px" }}>
+    <main className="min-h-screen flex items-start justify-center px-4 py-16 animate-[fadeIn_0.8s_ease-out]">
+      <div className="w-full" style={{ maxWidth: "1600px" }}>
         {/* Decorative line */}
         <div className="h-1 w-40 bg-[var(--accent-red)] mb-12 animate-[expandLine_1s_ease-out_0.5s_both]" />
 
         {/* Main content layout - Two columns side by side */}
         <div style={{ display: "flex", flexDirection: "row", gap: "4rem", alignItems: "flex-start" }} className="animate-[slideUp_0.8s_ease-out_0.2s_both]">
           {/* Left side - Text content */}
-          <div style={{ flex: "1", minWidth: "0" }}>
+          <div style={{ flex: "1", maxWidth: "800px" }}>
             <h1 className="font-[var(--font-playfair)] text-5xl lg:text-6xl font-black leading-tight text-[var(--black)] mb-8 tracking-tight">
               Think <span className="text-[var(--accent-red)] italic">Different</span> About Go-to-Market
             </h1>
 
-            <div className="space-y-6 text-base lg:text-lg text-[var(--charcoal)] leading-relaxed">
+            <div className="space-y-6 text-lg text-[var(--charcoal)] leading-relaxed">
               <p>
                 In 1997, Apple challenged the world to celebrate those who see things differently. That campaign inspired us to launch Work Different in 2013—with a mission to bring fresh thinking to how early-stage technology companies build and scale their go-to-market strategies.
               </p>
@@ -35,13 +35,13 @@ export default function Home() {
           </div>
 
           {/* Right side - Poster image */}
-          <div style={{ flexShrink: "0", width: "520px" }} className="animate-[slideLeft_0.8s_ease-out_0.6s_both]">
+          <div style={{ flexShrink: "0", width: "600px" }} className="animate-[slideLeft_0.8s_ease-out_0.6s_both]">
             <div className="relative border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] bg-white p-4">
               <Image
                 src="/images/IMG_0031.jpeg"
                 alt="Think Different - Iconic campaign poster"
-                width={520}
-                height={725}
+                width={600}
+                height={840}
                 className="w-full h-auto"
                 priority
               />
