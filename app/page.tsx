@@ -7,6 +7,7 @@ export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
+    <>
     <main style={{ maxWidth: '1152px', margin: '0 auto', padding: '64px 64px' }} className="animate-[fadeIn_0.8s_ease-out]">
       {/* Decorative line */}
       <div className="h-1 w-40 bg-[var(--accent-red)] mb-12 animate-[expandLine_1s_ease-out_0.5s_both]" />
@@ -122,31 +123,65 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Image Modal */}
-      {isModalOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-[200] p-8 cursor-pointer"
-          onClick={() => setIsModalOpen(false)}
-        >
-          <div className="relative max-w-4xl max-h-[90vh]">
-            <button
-              className="absolute -top-12 right-0 text-white text-4xl font-bold hover:text-[var(--accent-red)] transition-colors"
-              onClick={() => setIsModalOpen(false)}
-            >
-              ×
-            </button>
-            <Image
-              src="/images/IMG_0031.jpeg"
-              alt="Think Different - Apple Campaign Poster"
-              width={800}
-              height={1067}
-              className="w-auto h-auto max-w-full max-h-[90vh] object-contain"
-              quality={100}
-            />
-          </div>
-        </div>
-      )}
     </main>
+
+    {/* Image Modal */}
+    {isModalOpen && (
+      <div
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.92)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 9999,
+          padding: '2rem',
+          cursor: 'pointer'
+        }}
+        onClick={() => setIsModalOpen(false)}
+      >
+        <div style={{ position: 'relative', maxWidth: '64rem', maxHeight: '90vh' }}>
+          <button
+            style={{
+              position: 'absolute',
+              top: '-3rem',
+              right: 0,
+              color: 'white',
+              fontSize: '2.5rem',
+              fontWeight: 'bold',
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              lineHeight: 1
+            }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setIsModalOpen(false);
+            }}
+          >
+            ×
+          </button>
+          <Image
+            src="/images/IMG_0031.jpeg"
+            alt="Think Different - Apple Campaign Poster"
+            width={800}
+            height={1067}
+            style={{
+              width: 'auto',
+              height: 'auto',
+              maxWidth: '100%',
+              maxHeight: '90vh',
+              objectFit: 'contain'
+            }}
+            quality={100}
+          />
+        </div>
+      </div>
+    )}
+    </>
   );
 }
