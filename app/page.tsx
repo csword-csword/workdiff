@@ -3,15 +3,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen flex items-center justify-center px-4 md:px-16 py-16 animate-[fadeIn_0.8s_ease-out]">
-      <div className="max-w-6xl w-full">
+      <div className="max-w-7xl w-full">
         {/* Decorative line */}
         <div className="h-1 w-40 bg-[var(--accent-red)] mb-12 animate-[expandLine_1s_ease-out_0.5s_both]" />
 
-        {/* Main content layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start animate-[slideUp_0.8s_ease-out_0.2s_both]">
+        {/* Main content layout - Two columns on tablet and up */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start animate-[slideUp_0.8s_ease-out_0.2s_both]">
           {/* Left side - Text content */}
           <div>
-            <h1 className="font-[var(--font-playfair)] text-5xl md:text-7xl font-black leading-tight text-[var(--black)] mb-8 tracking-tight">
+            <h1 className="font-[var(--font-playfair)] text-5xl md:text-6xl lg:text-7xl font-black leading-tight text-[var(--black)] mb-8 tracking-tight">
               Think <span className="text-[var(--accent-red)] italic">Different</span> About Go-to-Market
             </h1>
 
@@ -32,26 +32,17 @@ export default function Home() {
                 At Work Different, we partner with investors and portfolio companies to do exactly that: bring operator expertise and unconventional thinking to the companies bold enough to change their industries.
               </p>
             </div>
-
-            <div className="mt-8 bg-[var(--black)] text-[var(--cream)] p-6 shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
-              <p className="text-sm tracking-wide mb-3">
-                Our new website is launching soon.
-              </p>
-              <p className="text-sm text-[var(--accent-yellow)] tracking-wide">
-                For inquiries, please contact us directly.
-              </p>
-            </div>
           </div>
 
           {/* Right side - Poster image */}
-          <div className="flex justify-center lg:justify-end animate-[slideLeft_0.8s_ease-out_0.6s_both]">
+          <div className="flex justify-center md:justify-end animate-[slideLeft_0.8s_ease-out_0.6s_both]">
             <div className="relative border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] bg-white p-4">
               <Image
                 src="/images/IMG_0031.jpeg"
                 alt="Think Different - Iconic campaign poster"
                 width={500}
                 height={700}
-                className="w-full h-auto"
+                className="w-full h-auto max-w-md"
                 priority
               />
             </div>
