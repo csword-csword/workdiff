@@ -38,13 +38,13 @@ export default function About() {
             WORK DIFFERENT has helped organizations establish scalable GTM strategies and execution that have allowed them to:
           </p>
 
-          <ul style={{ paddingLeft: '0', display: 'flex', flexDirection: 'column', gap: '0.75rem', marginLeft: '1.5rem' }}>
-            <li style={{ display: 'flex', alignItems: 'flex-start' }}>
-              <span style={{ color: 'var(--accent-red)', marginRight: '1rem', fontSize: '1.5rem', flexShrink: 0 }}>—</span>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            <li style={{ display: 'flex', alignItems: 'flex-start', paddingLeft: 0 }}>
+              <span style={{ color: 'var(--accent-red)', marginRight: '1rem', fontSize: '1.5rem', flexShrink: 0, lineHeight: '1' }}>—</span>
               <span>Achieve successful exits totalling over $1.7B</span>
             </li>
-            <li style={{ display: 'flex', alignItems: 'flex-start' }}>
-              <span style={{ color: 'var(--accent-red)', marginRight: '1rem', fontSize: '1.5rem', flexShrink: 0 }}>—</span>
+            <li style={{ display: 'flex', alignItems: 'flex-start', paddingLeft: 0 }}>
+              <span style={{ color: 'var(--accent-red)', marginRight: '1rem', fontSize: '1.5rem', flexShrink: 0, lineHeight: '1' }}>—</span>
               <span>Raise over $500M in capital to support their growth</span>
             </li>
           </ul>
