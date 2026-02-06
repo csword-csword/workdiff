@@ -167,6 +167,43 @@ body::before {
   }
 }
 
+/* Submenu styles */
+.nav-link-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  background: var(--cream);
+  border: 3px solid var(--black);
+  box-shadow: 4px 4px 0 var(--black);
+  padding: 0.5rem 0;
+  min-width: 200px;
+  z-index: 100;
+}
+
+.submenu-link {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--slate);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.submenu-link:hover {
+  background: var(--black);
+  color: var(--cream);
+}
+
 /* Animations */
 @keyframes fadeIn {
   from {

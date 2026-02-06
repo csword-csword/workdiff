@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export default function Navigation() {
   const pathname = usePathname();
+  const [showServicesMenu, setShowServicesMenu] = useState(false);
 
   return (
     <header className="masthead">
@@ -12,9 +14,25 @@ export default function Navigation() {
         Work Different
       </Link>
       <nav className="nav-links">
-        <Link href="/services" className={`nav-link ${pathname === "/services" ? "active" : ""}`}>
-          Services
-        </Link>
+        <div
+          className="nav-link-wrapper"
+          onMouseEnter={() => setShowServicesMenu(true)}
+          onMouseLeave={() => setShowServicesMenu(false)}
+        >
+          <span className={`nav-link ${pathname.startsWith("/services") ? "active" : ""}`}>
+            Services
+          </span>
+          {showServicesMenu && (
+            <div className="submenu">
+              <Link href="/services/portfolio-companies" className="submenu-link">
+                Portfolio Companies
+              </Link>
+              <Link href="/services/investors" className="submenu-link">
+                Investors
+              </Link>
+            </div>
+          )}
+        </div>
         <Link href="/successes" className={`nav-link ${pathname === "/successes" ? "active" : ""}`}>
           Successes
         </Link>
