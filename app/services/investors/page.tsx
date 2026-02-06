@@ -48,19 +48,19 @@ export default function Investors() {
   ];
 
   return (
-    <main style={{ maxWidth: '1400px', margin: '0 auto', padding: '64px 64px' }}>
-      {/* Services grid - 3 columns */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <main style={{ maxWidth: '1000px', margin: '0 auto', padding: '64px 64px' }}>
+      {/* Services stacked vertically for better readability */}
+      <div className="space-y-8">
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] p-6 relative"
+            className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] p-8 relative"
           >
             <div className="absolute top-0 left-0 w-full h-[5px]" style={{ backgroundColor: service.color }} />
-            <h2 className="font-[var(--font-bebas)] text-xl tracking-wider mb-4 text-[var(--black)] uppercase border-b-2 border-[var(--black)] pb-2">
+            <h2 className="font-[var(--font-bebas)] text-2xl md:text-3xl tracking-wider mb-4 text-[var(--black)] uppercase border-b-2 border-[var(--black)] pb-3">
               {service.title}
             </h2>
-            <p className="text-sm text-[var(--charcoal)] leading-relaxed">
+            <p className="text-base md:text-lg text-[var(--charcoal)] leading-relaxed">
               {service.description}
             </p>
           </div>
