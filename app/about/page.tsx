@@ -10,16 +10,16 @@ export default function About() {
           About Work Different
         </h2>
 
-        <div className="space-y-8 text-lg text-[var(--charcoal)] leading-relaxed">
-          <p>
+        <div className="text-lg text-[var(--charcoal)] leading-relaxed">
+          <p className="mb-12">
             WORK DIFFERENT provides strategic go-to-market advisory services to private equity and venture capital investors as well as their portfolio companies to drive ARR growth and successful outcomes.
           </p>
 
-          <p className="pt-6">
+          <p className="mb-8">
             WORK DIFFERENT has helped organizations establish scalable GTM strategies and execution that have allowed them to:
           </p>
 
-          <ul className="space-y-5 pl-6">
+          <ul className="space-y-6 pl-6">
             <li className="flex items-start">
               <span className="text-[var(--accent-red)] mr-4 text-2xl flex-shrink-0">—</span>
               <span>Achieve successful exits totalling over $1.7B</span>

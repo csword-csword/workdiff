@@ -52,27 +52,27 @@ export default function Home() {
         {/* Target Market sidebar - right column */}
         <div className="sidebar-column">
           <div className="bg-[var(--black)] text-[var(--cream)] p-10 shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
-            <h2 className="font-[var(--font-bebas)] text-2xl tracking-wider mb-10 text-[var(--accent-yellow)] uppercase">
+            <h2 className="font-[var(--font-bebas)] text-2xl tracking-wider mb-12 text-[var(--accent-yellow)] uppercase">
               Target Market
             </h2>
-            <div className="space-y-8 text-sm">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }} className="text-sm">
               <div>
                 <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-3 font-semibold">
                   Stage
                 </h3>
-                <p className="leading-loose">$0-20MM ARR</p>
+                <p style={{ lineHeight: '1.8' }}>$0-20MM ARR</p>
               </div>
               <div>
                 <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-3 font-semibold">
                   Market
                 </h3>
-                <p className="leading-loose">Enterprise</p>
+                <p style={{ lineHeight: '1.8' }}>Enterprise</p>
               </div>
               <div>
                 <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-3 font-semibold">
                   Domain
                 </h3>
-                <p className="leading-loose">
+                <p style={{ lineHeight: '1.8' }}>
                   SDLC, Infrastructure, Cybersecurity, AI, FinTech
                 </p>
               </div>
@@ -80,7 +80,7 @@ export default function Home() {
                 <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-3 font-semibold">
                   Verticals
                 </h3>
-                <p className="leading-loose">
+                <p style={{ lineHeight: '1.8' }}>
                   Banking, Insurance, Financial Services, Pharma, Automotive
                 </p>
               </div>
@@ -88,7 +88,7 @@ export default function Home() {
                 <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-3 font-semibold">
                   Regions
                 </h3>
-                <p className="leading-loose">NA, EMEA, APAC</p>
+                <p style={{ lineHeight: '1.8' }}>NA, EMEA, APAC</p>
               </div>
             </div>
           </div>
