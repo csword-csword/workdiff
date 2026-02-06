@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-8 md:px-16 py-16 animate-[fadeIn_0.8s_ease-out]">
+    <main className="max-w-6xl mx-auto px-8 md:px-16 py-16 animate-[fadeIn_0.8s_ease-out]">
       {/* Decorative line */}
       <div className="h-1 w-40 bg-[var(--accent-red)] mb-12 animate-[expandLine_1s_ease-out_0.5s_both]" />
 
@@ -28,14 +28,14 @@ export default function Home() {
       </div>
 
       {/* Poster artwork - constrained size */}
-      <div className="max-w-lg animate-[slideUp_0.8s_ease-out_0.4s_both]">
+      <div className="w-full max-w-md animate-[slideUp_0.8s_ease-out_0.4s_both]">
         <div className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-6 relative">
           <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-yellow)]" />
           <Image
             src="/images/IMG_0031.jpeg"
             alt="Think Different - Apple Campaign Poster"
-            width={600}
-            height={800}
+            width={448}
+            height={597}
             className="w-full h-auto"
             priority
           />
