@@ -38,7 +38,7 @@ export default function About() {
             WORK DIFFERENT has helped organizations establish scalable GTM strategies and execution that have allowed them to:
           </p>
 
-          <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+          <ul style={{ paddingLeft: '0', display: 'flex', flexDirection: 'column', gap: '0.75rem', marginLeft: '1.5rem' }}>
             <li style={{ display: 'flex', alignItems: 'flex-start' }}>
               <span style={{ color: 'var(--accent-red)', marginRight: '1rem', fontSize: '1.5rem', flexShrink: 0 }}>—</span>
               <span>Achieve successful exits totalling over $1.7B</span>
