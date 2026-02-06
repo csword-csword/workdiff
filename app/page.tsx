@@ -8,10 +8,10 @@ export default function Home() {
         <div className="h-1 w-40 bg-[var(--accent-red)] mb-12 animate-[expandLine_1s_ease-out_0.5s_both]" />
 
         {/* Main content layout - Two columns side by side */}
-        <div style={{ display: "flex", flexDirection: "row", gap: "3rem", alignItems: "flex-start" }} className="animate-[slideUp_0.8s_ease-out_0.2s_both]">
+        <div style={{ display: "flex", flexDirection: "row", gap: "4rem", alignItems: "flex-start" }} className="animate-[slideUp_0.8s_ease-out_0.2s_both]">
           {/* Left side - Text content */}
           <div style={{ flex: "1", minWidth: "0" }}>
-            <h1 className="font-[var(--font-playfair)] text-5xl lg:text-6xl xl:text-7xl font-black leading-tight text-[var(--black)] mb-8 tracking-tight">
+            <h1 className="font-[var(--font-playfair)] text-5xl lg:text-6xl font-black leading-tight text-[var(--black)] mb-8 tracking-tight">
               Think <span className="text-[var(--accent-red)] italic">Different</span> About Go-to-Market
             </h1>
 
@@ -35,13 +35,13 @@ export default function Home() {
           </div>
 
           {/* Right side - Poster image */}
-          <div style={{ flexShrink: "0", width: "380px" }} className="animate-[slideLeft_0.8s_ease-out_0.6s_both]">
+          <div style={{ flexShrink: "0", width: "480px" }} className="animate-[slideLeft_0.8s_ease-out_0.6s_both]">
             <div className="relative border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] bg-white p-4">
               <Image
                 src="/images/IMG_0031.jpeg"
                 alt="Think Different - Iconic campaign poster"
-                width={380}
-                height={530}
+                width={480}
+                height={670}
                 className="w-full h-auto"
                 priority
               />
