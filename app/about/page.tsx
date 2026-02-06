@@ -6,9 +6,18 @@ export default function About() {
 
       <div
         className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] relative"
-        style={{ padding: '2rem' }}
+        style={{ padding: '2rem', paddingTop: '2.5rem' }}
       >
-        <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-yellow)]" />
+        <div
+          className="bg-[var(--accent-yellow)]"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '5px'
+          }}
+        />
 
         <h2
           className="font-[var(--font-bebas)] text-4xl tracking-wider text-[var(--black)] uppercase"
@@ -19,7 +28,7 @@ export default function About() {
 
         <div
           className="text-[var(--charcoal)]"
-          style={{ fontSize: '1.125rem', lineHeight: '1.625' }}
+          style={{ fontSize: '1rem', lineHeight: '1.6' }}
         >
           <p style={{ marginBottom: '1.5rem' }}>
             WORK DIFFERENT provides strategic go-to-market advisory services to private equity and venture capital investors as well as their portfolio companies to drive ARR growth and successful outcomes.
