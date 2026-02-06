@@ -160,7 +160,7 @@ body::before {
 .tagline {
   font-size: 0.65rem;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.32rem;
   color: var(--slate);
   font-weight: 600;
   white-space: nowrap;
@@ -170,14 +170,14 @@ body::before {
 @media (min-width: 768px) {
   .tagline {
     font-size: 0.75rem;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.37rem;
   }
 }
 
 @media (min-width: 1024px) {
   .tagline {
     font-size: 0.875rem;
-    letter-spacing: 0.1875rem;
+    letter-spacing: 0.44rem;
   }
 }
 
