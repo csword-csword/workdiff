@@ -60,19 +60,19 @@ export default function Home() {
                 <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-3 font-semibold">
                   Stage
                 </h3>
-                <p className="leading-relaxed">$0-20MM ARR</p>
+                <p className="leading-loose">$0-20MM ARR</p>
               </div>
               <div>
                 <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-3 font-semibold">
                   Market
                 </h3>
-                <p className="leading-relaxed">Enterprise</p>
+                <p className="leading-loose">Enterprise</p>
               </div>
               <div>
                 <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-3 font-semibold">
                   Domain
                 </h3>
-                <p className="leading-relaxed">
+                <p className="leading-loose">
                   SDLC, Infrastructure, Cybersecurity, AI, FinTech
                 </p>
               </div>
@@ -80,7 +80,7 @@ export default function Home() {
                 <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-3 font-semibold">
                   Verticals
                 </h3>
-                <p className="leading-relaxed">
+                <p className="leading-loose">
                   Banking, Insurance, Financial Services, Pharma, Automotive
                 </p>
               </div>
@@ -88,7 +88,7 @@ export default function Home() {
                 <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-3 font-semibold">
                   Regions
                 </h3>
-                <p className="leading-relaxed">NA, EMEA, APAC</p>
+                <p className="leading-loose">NA, EMEA, APAC</p>
               </div>
             </div>
           </div>
