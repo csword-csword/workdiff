@@ -47,6 +47,24 @@ export default function Home() {
               We help early-stage B2B technology companies work different.
             </p>
           </div>
+
+          {/* Blog excerpt */}
+          <div className="mt-12 pt-8 border-t-2 border-[var(--slate)]">
+            <h3 className="font-[var(--font-bebas)] text-2xl tracking-wider text-[var(--black)] uppercase mb-4">
+              Latest Insight
+            </h3>
+            <a href="/blog/ai-coding-tools-distribution" className="group block">
+              <h4 className="text-xl font-bold text-[var(--black)] mb-3 group-hover:text-[var(--accent-blue)] transition-colors">
+                AI Coding Tools Are the New Distribution Channel
+              </h4>
+              <p className="text-base text-[var(--charcoal)] leading-relaxed mb-3">
+                The fastest-growing distribution channel in B2B technology isn't a marketplace, a sales team, or a partner program. It's an AI coding agent. When founders ask tools like Cursor or Claude Code to build applications, they increasingly pick the same platforms by default — Vercel, Supabase, Stripe. No evaluation. No sales cycle...
+              </p>
+              <span className="text-[var(--accent-blue)] font-semibold group-hover:underline">
+                Read the full article →
+              </span>
+            </a>
+          </div>
         </div>
 
         {/* Target Market sidebar - right column */}
