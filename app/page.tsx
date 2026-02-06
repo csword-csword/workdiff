@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         {/* Text content - center column */}
-        <div className="text-column">
+        <div className="text-column text-right">
           <h1 className="font-[var(--font-playfair)] text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-[var(--black)] mb-10 tracking-tight">
             Here's to the <span className="text-[var(--accent-red)] italic">crazy ones</span>
           </h1>
