@@ -69,7 +69,13 @@ export default function Investors() {
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 <span style={{ color: service.color }} className="mr-4 text-xl flex-shrink-0">—</span>
-                <span className={`text-base md:text-lg transition-colors cursor-pointer ${hoveredIndex === index ? 'text-[var(--black)] font-bold' : 'text-[var(--charcoal)]'}`}>
+                <span
+                  className="text-base md:text-lg transition-colors cursor-pointer"
+                  style={{
+                    color: hoveredIndex === index ? 'var(--black)' : 'var(--charcoal)',
+                    fontWeight: hoveredIndex === index ? 700 : 400
+                  }}
+                >
                   {service.title}
                 </span>
               </div>

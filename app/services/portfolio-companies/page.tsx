@@ -150,7 +150,13 @@ export default function PortfolioCompanies() {
                   onMouseLeave={() => setHoveredService(null)}
                 >
                   <span style={{ color: service.color }} className="mr-4 text-xl flex-shrink-0">—</span>
-                  <span className={`text-base transition-colors cursor-pointer ${hoveredService === `marketing-${index}` ? 'text-[var(--black)] font-bold' : 'text-[var(--charcoal)]'}`}>
+                  <span
+                    className="text-base transition-colors cursor-pointer"
+                    style={{
+                      color: hoveredService === `marketing-${index}` ? 'var(--black)' : 'var(--charcoal)',
+                      fontWeight: hoveredService === `marketing-${index}` ? 700 : 400
+                    }}
+                  >
                     {service.title}
                   </span>
                 </div>
@@ -186,7 +192,13 @@ export default function PortfolioCompanies() {
                   onMouseLeave={() => setHoveredService(null)}
                 >
                   <span style={{ color: service.color }} className="mr-4 text-xl flex-shrink-0">—</span>
-                  <span className={`text-base transition-colors cursor-pointer ${hoveredService === `sales-${index}` ? 'text-[var(--black)] font-bold' : 'text-[var(--charcoal)]'}`}>
+                  <span
+                    className="text-base transition-colors cursor-pointer"
+                    style={{
+                      color: hoveredService === `sales-${index}` ? 'var(--black)' : 'var(--charcoal)',
+                      fontWeight: hoveredService === `sales-${index}` ? 700 : 400
+                    }}
+                  >
                     {service.title}
                   </span>
                 </div>
@@ -222,7 +234,13 @@ export default function PortfolioCompanies() {
                   onMouseLeave={() => setHoveredService(null)}
                 >
                   <span style={{ color: service.color }} className="mr-4 text-xl flex-shrink-0">—</span>
-                  <span className={`text-base transition-colors cursor-pointer ${hoveredService === `cs-${index}` ? 'text-[var(--black)] font-bold' : 'text-[var(--charcoal)]'}`}>
+                  <span
+                    className="text-base transition-colors cursor-pointer"
+                    style={{
+                      color: hoveredService === `cs-${index}` ? 'var(--black)' : 'var(--charcoal)',
+                      fontWeight: hoveredService === `cs-${index}` ? 700 : 400
+                    }}
+                  >
                     {service.title}
                   </span>
                 </div>
@@ -258,7 +276,13 @@ export default function PortfolioCompanies() {
                   onMouseLeave={() => setHoveredService(null)}
                 >
                   <span style={{ color: service.color }} className="mr-4 text-xl flex-shrink-0">—</span>
-                  <span className={`text-base transition-colors cursor-pointer ${hoveredService === `channels-${index}` ? 'text-[var(--black)] font-bold' : 'text-[var(--charcoal)]'}`}>
+                  <span
+                    className="text-base transition-colors cursor-pointer"
+                    style={{
+                      color: hoveredService === `channels-${index}` ? 'var(--black)' : 'var(--charcoal)',
+                      fontWeight: hoveredService === `channels-${index}` ? 700 : 400
+                    }}
+                  >
                     {service.title}
                   </span>
                 </div>
