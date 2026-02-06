@@ -35,13 +35,13 @@ export default function Home() {
           </div>
 
           {/* Right side - Poster image */}
-          <div style={{ flexShrink: "0", width: "480px" }} className="animate-[slideLeft_0.8s_ease-out_0.6s_both]">
+          <div style={{ flexShrink: "0", width: "520px" }} className="animate-[slideLeft_0.8s_ease-out_0.6s_both]">
             <div className="relative border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] bg-white p-4">
               <Image
                 src="/images/IMG_0031.jpeg"
                 alt="Think Different - Iconic campaign poster"
-                width={480}
-                height={670}
+                width={520}
+                height={725}
                 className="w-full h-auto"
                 priority
               />
