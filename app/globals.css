@@ -340,7 +340,7 @@ body::before {
 .portfolio-box-content {
   display: flex;
   flex: 1;
-  min-height: auto;
+  min-height: 280px;
 }
 
 .portfolio-box-list {
