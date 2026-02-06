@@ -6,10 +6,10 @@ export default function Home() {
       {/* Decorative line */}
       <div className="h-1 w-40 bg-[var(--accent-red)] mb-12 animate-[expandLine_1s_ease-out_0.5s_both]" />
 
-      {/* Two-column layout: poster left, text right */}
-      <div style={{ display: 'flex', gap: '48px', alignItems: 'flex-start' }} className="animate-[slideUp_0.8s_ease-out_0.2s_both]">
+      {/* Two-column layout: poster left, text right on desktop; stacked on mobile */}
+      <div className="two-column-layout animate-[slideUp_0.8s_ease-out_0.2s_both]">
         {/* Poster artwork - left column */}
-        <div style={{ width: '300px', flexShrink: 0 }}>
+        <div className="poster-column">
           <div className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-4 relative">
             <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-yellow)]" />
             <Image
@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         {/* Text content - right column */}
-        <div style={{ flex: 1 }}>
+        <div className="text-column">
           <h1 className="font-[var(--font-playfair)] text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-[var(--black)] mb-10 tracking-tight">
             Here's to the <span className="text-[var(--accent-red)] italic">crazy ones</span>
           </h1>
