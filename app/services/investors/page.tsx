@@ -54,33 +54,40 @@ export default function Investors() {
   ];
 
   return (
-    <main style={{ maxWidth: '1000px', margin: '0 auto', padding: '64px 64px' }}>
-      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] p-8 relative">
+    <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '64px 64px' }}>
+      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ display: 'flex', minHeight: '400px' }}>
         <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-red)]" />
-        <div className="space-y-3">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="relative flex items-start"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-            >
-              <span style={{ color: service.color }} className="mr-3 text-xl">—</span>
-              <span className="text-[var(--charcoal)] text-base md:text-lg hover:text-[var(--black)] transition-colors cursor-pointer">
-                {service.title}
-              </span>
-              {hoveredIndex === index && (
-                <div
-                  className="absolute left-full ml-8 top-0 bg-white border-3 border-[var(--black)] shadow-[4px_4px_0_var(--black)] p-6 z-10"
-                  style={{ width: '500px', maxWidth: '90vw' }}
-                >
-                  <p className="text-[var(--charcoal)] text-sm md:text-base leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-              )}
-            </div>
-          ))}
+
+        {/* Left side: Service titles */}
+        <div style={{ width: '45%', padding: '3rem 2rem', borderRight: '2px solid var(--black)' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="flex items-start"
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                <span style={{ color: service.color }} className="mr-3 text-xl">—</span>
+                <span className={`text-base md:text-lg transition-colors cursor-pointer ${hoveredIndex === index ? 'text-[var(--black)] font-semibold' : 'text-[var(--charcoal)]'}`}>
+                  {service.title}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Right side: Description display */}
+        <div style={{ width: '55%', padding: '3rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          {hoveredIndex !== null ? (
+            <p className="text-[var(--charcoal)] text-base leading-relaxed">
+              {services[hoveredIndex].description}
+            </p>
+          ) : (
+            <p className="text-[var(--slate)] text-base italic">
+              Hover over a service to see details
+            </p>
+          )}
         </div>
       </div>
     </main>
