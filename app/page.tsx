@@ -28,14 +28,14 @@ export default function Home() {
       </div>
 
       {/* Poster artwork - constrained size */}
-      <div className="w-full max-w-md animate-[slideUp_0.8s_ease-out_0.4s_both]">
-        <div className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-6 relative">
+      <div className="w-full max-w-sm animate-[slideUp_0.8s_ease-out_0.4s_both]">
+        <div className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-4 relative">
           <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-yellow)]" />
           <Image
             src="/images/IMG_0031.jpeg"
             alt="Think Different - Apple Campaign Poster"
-            width={448}
-            height={597}
+            width={384}
+            height={512}
             className="w-full h-auto"
             priority
           />
