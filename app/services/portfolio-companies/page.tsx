@@ -2,7 +2,7 @@ export default function PortfolioCompanies() {
   return (
     <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '64px 64px' }}>
       {/* Four boxes in 2x2 grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
         {/* Marketing */}
         <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] p-8 relative">
           <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-red)]" />
