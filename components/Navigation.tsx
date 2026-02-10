@@ -45,6 +45,9 @@ export default function Navigation() {
         <Link href="/about" className={`nav-link ${pathname === "/about" ? "active" : ""}`}>
           About
         </Link>
+        <Link href="/careers" className={`nav-link ${pathname.startsWith("/careers") ? "active" : ""}`}>
+          Careers
+        </Link>
       </nav>
     </header>
   );
