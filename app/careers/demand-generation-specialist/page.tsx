@@ -17,11 +17,33 @@ export default function DemandGenSpecialist() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission (you'll need to implement actual backend)
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('linkedin', formData.linkedin);
+      formDataToSend.append('coverLetter', formData.coverLetter);
+
+      if (formData.resume) {
+        formDataToSend.append('resume', formData.resume);
+      }
+
+      const response = await fetch('/api/apply', {
+        method: 'POST',
+        body: formDataToSend,
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit application');
+      }
+
       setSubmitSuccess(true);
-    }, 1000);
+    } catch (error) {
+      console.error('Error submitting application:', error);
+      alert('There was an error submitting your application. Please try again or email your resume directly to charles@workdifferent.services');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
