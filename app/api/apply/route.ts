@@ -49,8 +49,9 @@ Resume attached as: ${resume.name}
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'careers@workdifferent.services',
+        from: 'onboarding@resend.dev',
         to: 'charles@workdifferent.services',
+        reply_to: email,
         subject: `New Application: ${name} - Demand Generation Specialist`,
         text: emailContent,
         attachments: [
@@ -63,15 +64,17 @@ Resume attached as: ${resume.name}
     });
 
     if (!emailResponse.ok) {
-      const error = await emailResponse.text();
-      console.error('Resend API error:', error);
+      const errorData = await emailResponse.json();
+      console.error('Resend API error:', errorData);
       return NextResponse.json(
-        { error: 'Failed to send email' },
-        { status: 500 }
+        { error: `Failed to send email: ${errorData.message || 'Unknown error'}`, details: errorData },
+        { status: emailResponse.status }
       );
     }
 
-    return NextResponse.json({ success: true });
+    const result = await emailResponse.json();
+    console.log('Email sent successfully:', result);
+    return NextResponse.json({ success: true, emailId: result.id });
   } catch (error) {
     console.error('Application submission error:', error);
     return NextResponse.json(
