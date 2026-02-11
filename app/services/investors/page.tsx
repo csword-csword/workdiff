@@ -55,6 +55,15 @@ export default function Investors() {
 
   return (
     <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '64px 64px' }}>
+      <div className="h-1 w-40 bg-[var(--accent-red)] mb-12 animate-[expandLine_1s_ease-out_0.5s_both]" />
+
+      <h1 className="font-[var(--font-bebas)] text-5xl tracking-wider text-[var(--black)] uppercase mb-3" style={{ lineHeight: '1.1' }}>
+        Investor Services
+      </h1>
+      <p className="text-lg text-[var(--charcoal)] mb-12" style={{ lineHeight: '1.6' }}>
+        Comprehensive GTM due diligence services for prospective investments
+      </p>
+
       <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative investors-layout">
         <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-red)]" />
 
