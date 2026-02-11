@@ -73,6 +73,27 @@ export default function Blog() {
             </a>
           </div>
         </div>
+
+        {/* Article 4 - NEW */}
+        <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] hover:shadow-[10px_10px_0_var(--black)] transition-all relative" style={{ overflow: 'hidden', minHeight: '280px', display: 'flex', flexDirection: 'column' }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#457b9d' }} />
+
+          <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
+            <a href="/blog/autonomous-agents-gtm-readiness" style={{ textDecoration: 'none', marginBottom: '1rem' }}>
+              <h2 className="font-[var(--font-bebas)] text-2xl tracking-wider text-[var(--black)] uppercase hover:text-[var(--accent-blue)] transition-colors" style={{ lineHeight: '1.2' }}>
+                Why Your GTM Team Isn't Ready for Autonomous Agents
+              </h2>
+            </a>
+
+            <p style={{ color: '#2a2a2a', lineHeight: '1.6', marginBottom: '1.5rem', fontSize: '0.9rem', flex: 1 }}>
+              The hype around autonomous AI agents is real—but most GTM teams lack the process maturity to deploy them successfully. Here's what's missing.
+            </p>
+
+            <a href="/blog/autonomous-agents-gtm-readiness" style={{ color: '#457b9d', fontWeight: 600, fontSize: '0.875rem', textDecoration: 'none', marginTop: 'auto' }} className="hover:underline">
+              Read more →
+            </a>
+          </div>
+        </div>
       </div>
     </main>
   );
