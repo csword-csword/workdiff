@@ -23,7 +23,7 @@ export default function AutonomousAgentsGTMReadiness() {
 
         <div className="text-[var(--charcoal)]" style={{ fontSize: '1.0625rem', lineHeight: '1.7' }}>
           <p style={{ marginBottom: '1.5rem' }}>
-            OpenAI's new autonomous agent capabilities are generating massive excitement. The promise is intoxicating: AI agents that can execute complex GTM workflows without constant human supervision. Deploy an agent to run outbound campaigns. Let AI handle customer onboarding. Automate your entire demand generation engine.
+            OpenClaw is getting all the buzz. The viral, open-source autonomous AI agent promises to act as your personal virtual assistant—executing complex GTM workflows without constant human supervision. Deploy an agent to run outbound campaigns. Let AI handle customer onboarding. Automate your entire demand generation engine.
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>
