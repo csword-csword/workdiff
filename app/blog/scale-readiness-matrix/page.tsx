@@ -99,8 +99,8 @@ export default function ScaleReadinessMatrix() {
           <Image
             src="/images/blog/scale-readiness-matrix.png"
             alt="Scale Readiness Matrix showing four quadrants based on Product Adoption and GTM Repeatability"
-            width={1200}
-            height={900}
+            width={673}
+            height={529}
             className="w-full h-auto border-2 border-[var(--black)]"
             style={{ marginTop: '2rem', marginBottom: '2rem' }}
           />
