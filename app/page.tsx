@@ -63,15 +63,15 @@ export default function Home() {
               Latest Insight
             </h3>
             <div className="group">
-              <a href="/blog/ai-coding-tools-distribution" className="block no-underline">
-                <h4 className="text-xl font-bold text-[var(--black)] mb-3 group-hover:text-[var(--accent-blue)] transition-colors inline-block group-hover:underline">
-                  The AI Agent Is The New Buyer
+              <a href="/blog/early-stage-gtm-peril" className="block no-underline">
+                <h4 className="text-xl font-bold text-[var(--black)] mb-3 group-hover:text-[var(--accent-red)] transition-colors inline-block group-hover:underline">
+                  The $2M-$10M Peril: Why Most Startups Fail to Scale GTM
                 </h4>
               </a>
               <p className="text-base text-[var(--charcoal)] leading-relaxed mb-3">
-                The fastest-growing distribution channel in B2B technology isn't a marketplace, a sales team, or a partner program. It's an AI coding agent. When founders ask tools like Cursor or Claude Code to build applications, they increasingly pick the same platforms by default — Vercel, Supabase, Stripe. No evaluation. No sales cycle...
+                Most startup failures aren't technology failures. They're go-to-market failures. And they almost always happen in the same place: the race from $2M to $10M in ARR. This is where the math stops working. Where overhead explodes. Where the bet you made on your GTM model either pays off spectacularly or destroys your runway...
               </p>
-              <a href="/blog/ai-coding-tools-distribution" className="text-[var(--accent-blue)] font-semibold hover:underline no-underline">
+              <a href="/blog/early-stage-gtm-peril" className="text-[var(--accent-red)] font-semibold hover:underline no-underline">
                 Read the full article →
               </a>
             </div>

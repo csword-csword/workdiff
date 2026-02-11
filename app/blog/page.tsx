@@ -13,6 +13,24 @@ export default function Blog() {
         </p>
 
         <div className="space-y-8">
+          <a href="/blog/early-stage-gtm-peril" className="block group">
+            <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] group-hover:shadow-[10px_10px_0_var(--black)] transition-all p-8 relative">
+              <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-red)]" />
+
+              <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-4 group-hover:text-[var(--accent-red)] transition-colors">
+                The $2M-$10M Peril: Why Most Startups Fail to Scale GTM
+              </h2>
+
+              <p className="text-[var(--charcoal)] leading-relaxed mb-4">
+                Most startup failures aren't technology failures. They're go-to-market failures. And they almost always happen in the same place: the race from $2M to $10M in ARR. This is where the math stops working. Where overhead explodes. Where the bet you made on your GTM model either pays off spectacularly or destroys your runway...
+              </p>
+
+              <span className="text-[var(--accent-red)] font-semibold group-hover:underline">
+                Read more →
+              </span>
+            </div>
+          </a>
+
           <a href="/blog/ai-coding-tools-distribution" className="block group">
             <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] group-hover:shadow-[10px_10px_0_var(--black)] transition-all p-8 relative">
               <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-blue)]" />
