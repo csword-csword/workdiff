@@ -147,18 +147,21 @@ export default function GTMAssessment() {
             Who This Is For
           </h2>
 
+          <p style={{ marginBottom: '1.5rem' }}>
+            This assessment is built specifically for <strong>very early-stage tech companies (Seed, Series A)</strong> in the <strong>$2M-$10M ARR danger zone</strong>—where most GTM failures happen.
+          </p>
+
           <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem' }}>
-            <li style={{ marginBottom: '0.5rem' }}><strong>Series A-B startups</strong> trying to figure out if they're ready to scale GTM</li>
+            <li style={{ marginBottom: '0.5rem' }}><strong>Seed and Series A startups</strong> trying to figure out if they're ready to scale GTM or need to fix fundamentals first</li>
             <li style={{ marginBottom: '0.5rem' }}><strong>Portfolio companies</strong> where the board is asking hard questions about pipeline, CAC, or churn</li>
-            <li style={{ marginBottom: '0.5rem' }}><strong>Growth-stage companies</strong> that have hit a wall and need to diagnose what's broken</li>
-            <li style={{ marginBottom: '0.5rem' }}><strong>GTM leaders</strong> who inherited a mess and need an objective, third-party assessment before rebuilding</li>
+            <li style={{ marginBottom: '0.5rem' }}><strong>Founders and GTM leaders</strong> who need an objective diagnosis before making big hiring or spending decisions</li>
           </ul>
 
           <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase" style={{ marginTop: '2.5rem', marginBottom: '1rem' }}>
             Timeline & Engagement
           </h2>
 
-          <p style={{ marginBottom: '1rem' }}><strong>Duration</strong>: 4-6 weeks</p>
+          <p style={{ marginBottom: '1rem' }}><strong>Duration</strong>: 30 days</p>
           <p style={{ marginBottom: '1rem' }}><strong>Format</strong>: Remote with key stakeholder interviews, data analysis, and working sessions</p>
 
           <p style={{ marginBottom: '0.5rem' }}><strong>Deliverables</strong>:</p>
