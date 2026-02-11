@@ -3,133 +3,42 @@
 import { useState } from "react";
 
 export default function PortfolioCompanies() {
-  const [hoveredService, setHoveredService] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  const services = {
-    marketing: [
-      {
-        title: "ICP Definition",
-        description: "Define your ideal customer profile using AI-powered market analysis and customer data patterns to identify the highest-value segments for your GTM motion.",
-        color: "var(--accent-red)"
-      },
-      {
-        title: "Value Positioning",
-        description: "Craft differentiated positioning that resonates with buyers, leveraging AI insights to understand competitive gaps and customer pain points at scale.",
-        color: "var(--accent-red)"
-      },
-      {
-        title: "Messaging",
-        description: "Develop compelling messaging frameworks and use AI to test, optimize, and personalize content across channels for maximum conversion impact.",
-        color: "var(--accent-red)"
-      },
-      {
-        title: "Packaging and Pricing",
-        description: "Design pricing models that drive expansion revenue, using AI-driven analytics to optimize packaging tiers and price points for your market.",
-        color: "var(--accent-red)"
-      },
-      {
-        title: "Collateral",
-        description: "Create high-impact sales and marketing materials, accelerated by AI tools for content generation, design, and personalization at scale.",
-        color: "var(--accent-red)"
-      },
-      {
-        title: "Demand Gen",
-        description: "Build scalable demand generation engines using AI for targeting, campaign optimization, lead scoring, and attribution across your marketing funnel.",
-        color: "var(--accent-red)"
-      },
-      {
-        title: "Metrics",
-        description: "Establish data-driven marketing measurement frameworks with AI-powered dashboards to track pipeline contribution, ROI, and leading indicators.",
-        color: "var(--accent-red)"
-      }
-    ],
-    sales: [
-      {
-        title: "Sales Process",
-        description: "Design repeatable sales methodologies enhanced by AI for deal qualification, next-best-action recommendations, and cycle acceleration.",
-        color: "var(--accent-blue)"
-      },
-      {
-        title: "Playbooks",
-        description: "Create battle-tested sales playbooks with AI-assisted content for objection handling, competitive positioning, and discovery questions.",
-        color: "var(--accent-blue)"
-      },
-      {
-        title: "Pipeline Mgmt",
-        description: "Implement rigorous pipeline management with AI-powered forecasting, risk analysis, and deal health scoring to improve win rates.",
-        color: "var(--accent-blue)"
-      },
-      {
-        title: "Team Development",
-        description: "Build high-performing sales teams using AI tools for coaching, skill gap analysis, call analysis, and personalized training programs.",
-        color: "var(--accent-blue)"
-      },
-      {
-        title: "Forecasting",
-        description: "Develop accurate revenue forecasting models leveraging AI to analyze historical patterns, pipeline velocity, and external signals.",
-        color: "var(--accent-blue)"
-      },
-      {
-        title: "Commercials",
-        description: "Structure deals and commercial terms that accelerate closes and drive expansion, using AI insights on pricing and packaging optimization.",
-        color: "var(--accent-blue)"
-      },
-      {
-        title: "Metrics",
-        description: "Define sales KPIs and performance dashboards with AI-driven analytics to identify top performers, coaching opportunities, and process bottlenecks.",
-        color: "var(--accent-blue)"
-      }
-    ],
-    cs: [
-      {
-        title: "Treatment Strategy",
-        description: "Design customer segmentation and treatment models using AI to predict risk, identify expansion opportunities, and optimize resource allocation.",
-        color: "var(--accent-yellow)"
-      },
-      {
-        title: "QBR",
-        description: "Create impactful quarterly business reviews enhanced by AI-generated insights on usage patterns, value realization, and growth opportunities.",
-        color: "var(--accent-yellow)"
-      },
-      {
-        title: "Cross-Sell",
-        description: "Identify and execute cross-sell opportunities using AI to analyze product fit, usage signals, and optimal timing for expansion conversations.",
-        color: "var(--accent-yellow)"
-      },
-      {
-        title: "Renewals",
-        description: "Build proactive renewal processes with AI-powered health scoring, churn prediction, and automated early warning systems for at-risk accounts.",
-        color: "var(--accent-yellow)"
-      },
-      {
-        title: "Metrics",
-        description: "Establish customer success KPIs including NRR, GRR, and customer health scores, powered by AI analytics to predict and prevent churn.",
-        color: "var(--accent-yellow)"
-      }
-    ],
-    channels: [
-      {
-        title: "Structure",
-        description: "Design partner and channel programs optimized for scale, using AI to identify ideal partner profiles and predict program performance.",
-        color: "var(--slate)"
-      },
-      {
-        title: "Priority",
-        description: "Prioritize channel investments using AI-driven analysis of partner performance, market coverage, and revenue potential by segment.",
-        color: "var(--slate)"
-      },
-      {
-        title: "Commercials",
-        description: "Create partner commercial models and compensation structures that drive the right behaviors, informed by AI benchmarking and performance data.",
-        color: "var(--slate)"
-      },
-      {
-        title: "Metrics",
-        description: "Implement channel performance tracking with AI-powered analytics on partner productivity, pipeline contribution, and program ROI.",
-        color: "var(--slate)"
-      }
-    ]
-  };
+  const categories = [
+    {
+      id: "marketing",
+      title: "Marketing",
+      icon: "ICP, Messaging, Demand Gen",
+      description: "Build scalable marketing engines from positioning to pipeline generation",
+      services: ["ICP Definition", "Value Positioning", "Messaging", "Packaging & Pricing", "Collateral", "Demand Gen", "Metrics"],
+      color: "#e63946"
+    },
+    {
+      id: "sales",
+      title: "Sales",
+      icon: "Process, Playbooks, Pipeline",
+      description: "Create repeatable sales motions that drive predictable revenue growth",
+      services: ["Sales Process", "Playbooks", "Pipeline Mgmt", "Team Development", "Forecasting", "Commercials", "Metrics"],
+      color: "#457b9d"
+    },
+    {
+      id: "cs",
+      title: "Customer Success",
+      icon: "Adoption, Retention, Expansion",
+      description: "Drive customer adoption, retention, and net revenue retention",
+      services: ["Treatment Strategy", "QBR", "Cross-Sell", "Renewals", "Metrics"],
+      color: "#f4a261"
+    },
+    {
+      id: "channels",
+      title: "Channels & Partnerships",
+      icon: "Structure, Priority, Metrics",
+      description: "Design and scale partner programs that drive incremental revenue",
+      services: ["Structure", "Priority", "Commercials", "Metrics"],
+      color: "#4a5568"
+    }
+  ];
 
   return (
     <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '64px 64px' }}>
@@ -139,177 +48,152 @@ export default function PortfolioCompanies() {
         Portfolio Services
       </h1>
       <p className="text-lg text-[var(--charcoal)] mb-12" style={{ lineHeight: '1.6' }}>
-        Embedded operator expertise for early stage B2B technology companies
+        À la carte operator expertise for early stage B2B technology companies. Pick the areas where you need help most.
       </p>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
-        {/* Marketing */}
-        <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative portfolio-box">
-          <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-red)]" />
-          <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase portfolio-box-header">
-            Marketing
+      {/* The Problem */}
+      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#e63946' }} />
+        <div style={{ padding: '2.5rem' }}>
+          <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-4">
+            Embedded Operator Expertise Without the Overhead
           </h2>
-          <div className="portfolio-box-content">
-            <div className="portfolio-box-list">
-              {services.marketing.map((service, index) => (
-                <div
-                  key={index}
-                  className="flex items-start"
-                  onMouseEnter={() => setHoveredService(`marketing-${index}`)}
-                  onMouseLeave={() => setHoveredService(null)}
-                >
-                  <span style={{ color: service.color }} className="mr-4 text-xl flex-shrink-0">—</span>
-                  <span
-                    className="text-base transition-colors cursor-pointer"
-                    style={{
-                      color: hoveredService === `marketing-${index}` ? 'var(--black)' : 'var(--charcoal)',
-                      fontWeight: hoveredService === `marketing-${index}` ? 700 : 400
-                    }}
-                  >
-                    {service.title}
-                  </span>
-                </div>
-              ))}
-            </div>
-            <div className="portfolio-box-description">
-              {hoveredService?.startsWith('marketing-') ? (
-                <p className="text-[var(--charcoal)] text-sm leading-relaxed">
-                  {services.marketing[parseInt(hoveredService.split('-')[1])].description}
-                </p>
-              ) : (
-                <p className="text-[var(--slate)] text-sm italic">
-                  Hover over a service to see details
-                </p>
-              )}
-            </div>
-          </div>
+          <p style={{ marginBottom: '1.5rem', fontSize: '1.1rem', lineHeight: '1.7', color: '#2a2a2a' }}>
+            You don't need a full-time CMO, VP of Sales, or Head of Customer Success. You need specific GTM capabilities delivered by operators who've done it before—and who know how to leverage AI to work faster.
+          </p>
+          <p style={{ fontSize: '1.1rem', lineHeight: '1.7', color: '#2a2a2a' }}>
+            Whether you need help defining your ICP, building a sales playbook, designing a customer success program, or launching a partner channel, we embed with your team to design, build, and implement—then hand it off for you to run.
+          </p>
         </div>
+      </div>
 
-        {/* Sales */}
-        <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative portfolio-box">
-          <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-blue)]" />
-          <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase portfolio-box-header">
-            Sales
-          </h2>
-          <div className="portfolio-box-content">
-            <div className="portfolio-box-list">
-              {services.sales.map((service, index) => (
-                <div
-                  key={index}
-                  className="flex items-start"
-                  onMouseEnter={() => setHoveredService(`sales-${index}`)}
-                  onMouseLeave={() => setHoveredService(null)}
-                >
-                  <span style={{ color: service.color }} className="mr-4 text-xl flex-shrink-0">—</span>
-                  <span
-                    className="text-base transition-colors cursor-pointer"
-                    style={{
-                      color: hoveredService === `sales-${index}` ? 'var(--black)' : 'var(--charcoal)',
-                      fontWeight: hoveredService === `sales-${index}` ? 700 : 400
-                    }}
-                  >
-                    {service.title}
-                  </span>
+      {/* Service Categories */}
+      <div style={{ marginBottom: '3rem' }}>
+        <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-6">
+          Service Areas
+        </h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
+          {categories.map((category) => (
+            <div
+              key={category.id}
+              className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] hover:shadow-[10px_10px_0_var(--black)] transition-all relative cursor-pointer"
+              onMouseEnter={() => setSelectedCategory(category.id)}
+              onMouseLeave={() => setSelectedCategory(null)}
+              style={{ padding: '2rem', minHeight: '240px', overflow: 'hidden' }}
+            >
+              <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: category.color }} />
+              <h3 className="font-[var(--font-bebas)] text-2xl tracking-wider text-[var(--black)] uppercase mb-2">
+                {category.title}
+              </h3>
+              <p style={{ fontSize: '0.85rem', color: '#4a5568', marginBottom: '1rem', fontStyle: 'italic' }}>
+                {category.icon}
+              </p>
+              <p style={{ fontSize: '0.9rem', color: '#2a2a2a', marginBottom: '1rem', lineHeight: '1.6' }}>
+                {category.description}
+              </p>
+              {selectedCategory === category.id && (
+                <div style={{ borderTop: '1px solid #4a5568', paddingTop: '1rem', marginTop: '1rem' }}>
+                  <p style={{ fontSize: '0.75rem', color: '#4a5568', marginBottom: '0.5rem', fontWeight: 600 }}>
+                    Services Include:
+                  </p>
+                  <p style={{ fontSize: '0.8rem', color: '#2a2a2a', lineHeight: '1.5' }}>
+                    {category.services.join(' • ')}
+                  </p>
                 </div>
-              ))}
-            </div>
-            <div className="portfolio-box-description">
-              {hoveredService?.startsWith('sales-') ? (
-                <p className="text-[var(--charcoal)] text-sm leading-relaxed">
-                  {services.sales[parseInt(hoveredService.split('-')[1])].description}
-                </p>
-              ) : (
-                <p className="text-[var(--slate)] text-sm italic">
-                  Hover over a service to see details
-                </p>
               )}
             </div>
-          </div>
+          ))}
         </div>
+      </div>
 
-        {/* CS */}
-        <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative portfolio-box">
-          <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-yellow)]" />
-          <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase portfolio-box-header">
-            CS
+      {/* How It Works */}
+      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#457b9d' }} />
+        <div style={{ padding: '2.5rem' }}>
+          <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-4">
+            How It Works
           </h2>
-          <div className="portfolio-box-content">
-            <div className="portfolio-box-list">
-              {services.cs.map((service, index) => (
-                <div
-                  key={index}
-                  className="flex items-start"
-                  onMouseEnter={() => setHoveredService(`cs-${index}`)}
-                  onMouseLeave={() => setHoveredService(null)}
-                >
-                  <span style={{ color: service.color }} className="mr-4 text-xl flex-shrink-0">—</span>
-                  <span
-                    className="text-base transition-colors cursor-pointer"
-                    style={{
-                      color: hoveredService === `cs-${index}` ? 'var(--black)' : 'var(--charcoal)',
-                      fontWeight: hoveredService === `cs-${index}` ? 700 : 400
-                    }}
-                  >
-                    {service.title}
-                  </span>
-                </div>
-              ))}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            <div style={{ padding: '1rem', borderLeft: '3px solid #e63946', color: '#2a2a2a' }}>
+              <strong>1. Scope</strong><br />
+              Pick the areas where you need help (à la carte)
             </div>
-            <div className="portfolio-box-description">
-              {hoveredService?.startsWith('cs-') ? (
-                <p className="text-[var(--charcoal)] text-sm leading-relaxed">
-                  {services.cs[parseInt(hoveredService.split('-')[1])].description}
-                </p>
-              ) : (
-                <p className="text-[var(--slate)] text-sm italic">
-                  Hover over a service to see details
-                </p>
-              )}
+            <div style={{ padding: '1rem', borderLeft: '3px solid #f4a261', color: '#2a2a2a' }}>
+              <strong>2. Embed</strong><br />
+              We work alongside your team to design and build
+            </div>
+            <div style={{ padding: '1rem', borderLeft: '3px solid #457b9d', color: '#2a2a2a' }}>
+              <strong>3. Deliver</strong><br />
+              You get working systems, playbooks, and processes
+            </div>
+            <div style={{ padding: '1rem', borderLeft: '3px solid #4a5568', color: '#2a2a2a' }}>
+              <strong>4. Handoff</strong><br />
+              We train your team to run it independently
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Channels */}
-        <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative portfolio-box">
-          <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--slate)]" />
-          <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase portfolio-box-header">
-            Channels
+      {/* AI-First Approach */}
+      <div className="bg-[var(--black)] border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem', overflow: 'hidden' }}>
+        <div style={{ padding: '2.5rem', textAlign: 'center' }}>
+          <h2 className="font-[var(--font-bebas)] text-4xl tracking-wider uppercase mb-4" style={{ color: '#f4a261' }}>
+            Every Engagement Is AI-First
           </h2>
-          <div className="portfolio-box-content">
-            <div className="portfolio-box-list">
-              {services.channels.map((service, index) => (
-                <div
-                  key={index}
-                  className="flex items-start"
-                  onMouseEnter={() => setHoveredService(`channels-${index}`)}
-                  onMouseLeave={() => setHoveredService(null)}
-                >
-                  <span style={{ color: service.color }} className="mr-4 text-xl flex-shrink-0">—</span>
-                  <span
-                    className="text-base transition-colors cursor-pointer"
-                    style={{
-                      color: hoveredService === `channels-${index}` ? 'var(--black)' : 'var(--charcoal)',
-                      fontWeight: hoveredService === `channels-${index}` ? 700 : 400
-                    }}
-                  >
-                    {service.title}
-                  </span>
-                </div>
-              ))}
-            </div>
-            <div className="portfolio-box-description">
-              {hoveredService?.startsWith('channels-') ? (
-                <p className="text-[var(--charcoal)] text-sm leading-relaxed">
-                  {services.channels[parseInt(hoveredService.split('-')[1])].description}
-                </p>
-              ) : (
-                <p className="text-[var(--slate)] text-sm italic">
-                  Hover over a service to see details
-                </p>
-              )}
-            </div>
-          </div>
+          <p style={{ fontSize: '1.2rem', lineHeight: '1.7', maxWidth: '800px', margin: '0 auto', color: '#ffffff' }}>
+            We don't just build processes—we build <strong>AI-enhanced processes</strong> that amplify productivity and drive better outcomes. From AI-powered lead scoring to automated QBR generation, every deliverable includes AI leverage.
+          </p>
         </div>
+      </div>
+
+      {/* Engagement Model */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem', marginBottom: '3rem' }}>
+        <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ padding: '2rem', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#e63946' }} />
+          <h3 className="font-[var(--font-bebas)] text-2xl tracking-wider text-[var(--black)] uppercase mb-3">
+            Engagement Model
+          </h3>
+          <p style={{ fontSize: '1rem', marginBottom: '0.75rem', color: '#2a2a2a' }}>
+            <strong>Format:</strong> Project-based or retainer
+          </p>
+          <p style={{ fontSize: '0.9rem', color: '#2a2a2a', lineHeight: '1.6' }}>
+            Choose specific projects or ongoing support across multiple areas
+          </p>
+        </div>
+        <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ padding: '2rem', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#f4a261' }} />
+          <h3 className="font-[var(--font-bebas)] text-2xl tracking-wider text-[var(--black)] uppercase mb-3">
+            Who This Is For
+          </h3>
+          <p style={{ fontSize: '0.9rem', color: '#2a2a2a', lineHeight: '1.6' }}>
+            <strong>Portfolio companies</strong> that need specific GTM capabilities built but don't need full-time leadership hires
+          </p>
+        </div>
+      </div>
+
+      {/* CTA */}
+      <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '2px solid #4a5568', textAlign: 'center' }}>
+        <p style={{ fontStyle: 'italic', fontSize: '1.1rem', marginBottom: '1.5rem', color: '#2a2a2a' }}>
+          Ready to build specific GTM capabilities without the overhead?
+        </p>
+        <a
+          href="mailto:charles@workdifferent.services"
+          className="font-[var(--font-bebas)]"
+          style={{
+            display: 'inline-block',
+            backgroundColor: '#457b9d',
+            color: '#ffffff',
+            fontSize: '1.125rem',
+            letterSpacing: '0.1rem',
+            textTransform: 'uppercase',
+            padding: '1rem 2rem',
+            border: '3px solid #0a0a0a',
+            boxShadow: '4px 4px 0 #0a0a0a',
+            textDecoration: 'none'
+          }}
+        >
+          Contact Us
+        </a>
       </div>
     </main>
   );
