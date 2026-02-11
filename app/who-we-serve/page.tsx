@@ -142,9 +142,25 @@ export default function WhoWeServe() {
               </p>
 
               {selectedArea !== area.id ? (
-                <p style={{ fontSize: '0.9rem', color: '#2a2a2a', lineHeight: '1.6' }}>
-                  {area.description}
-                </p>
+                <>
+                  <p style={{ fontSize: '0.9rem', color: '#2a2a2a', lineHeight: '1.6', marginBottom: '1rem' }}>
+                    {area.description}
+                  </p>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    marginTop: 'auto',
+                    paddingTop: '1rem',
+                    borderTop: '1px solid #e5e7eb',
+                    fontSize: '0.8rem',
+                    color: area.color,
+                    fontWeight: 600
+                  }}>
+                    <span>Hover to see how AI is transforming this market</span>
+                    <span style={{ fontSize: '1rem' }}>→</span>
+                  </div>
+                </>
               ) : (
                 <div style={{ fontSize: '0.85rem', color: '#2a2a2a', lineHeight: '1.6', flex: 1 }}>
                   <p style={{ fontWeight: 600, marginBottom: '0.5rem', color: area.color }}>
