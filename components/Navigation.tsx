@@ -30,6 +30,12 @@ export default function Navigation() {
               <Link href="/services/gtm-assessment" className="submenu-link">
                 GTM Assessment
               </Link>
+              <Link href="/services/ai-platform-deployment" className="submenu-link">
+                AI-First Platform Deployment
+              </Link>
+              <Link href="/services/gtm-virtual-team" className="submenu-link">
+                GTM Virtual Team
+              </Link>
               <Link href="/services/portfolio-companies" className="submenu-link">
                 Portfolio Services
               </Link>
