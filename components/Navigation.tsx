@@ -31,10 +31,10 @@ export default function Navigation() {
                 GTM Assessment
               </Link>
               <Link href="/services/portfolio-companies" className="submenu-link">
-                Portfolio Companies
+                Portfolio Services
               </Link>
               <Link href="/services/investors" className="submenu-link">
-                Investors
+                Investor Services
               </Link>
             </div>
           )}
