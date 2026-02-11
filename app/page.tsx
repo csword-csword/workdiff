@@ -14,86 +14,44 @@ export default function Home() {
 
       {/* Hero Section */}
       <div className="animate-[slideUp_0.8s_ease-out_0.2s_both]" style={{ marginBottom: '4rem' }}>
-        <h1 className="font-[var(--font-playfair)] text-5xl md:text-7xl font-black leading-tight text-[var(--black)] mb-6 tracking-tight">
-          Here's to the <span className="text-[var(--accent-red)] italic">crazy ones</span>
-        </h1>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '3rem', alignItems: 'start', marginBottom: '2rem' }}>
+          <div>
+            <h1 className="font-[var(--font-playfair)] text-5xl md:text-7xl font-black leading-tight text-[var(--black)] mb-6 tracking-tight">
+              Here's to the <span className="text-[var(--accent-red)] italic">crazy ones</span>
+            </h1>
 
-        <div className="space-y-4 text-lg text-[var(--charcoal)] leading-relaxed" style={{ maxWidth: '900px' }}>
-          <p>
-            Apple's iconic "Think Different" campaign inspired the founding of Work Different in 2013. We believed then—and believe even more strongly now—that scaling go-to-market strategies requires creativity, bold thinking, and a willingness to challenge conventional wisdom.
-          </p>
+            <div className="space-y-4 text-lg text-[var(--charcoal)] leading-relaxed">
+              <p>
+                Apple's iconic "Think Different" campaign inspired the founding of Work Different in 2013. We believed then—and believe even more strongly now—that scaling go-to-market strategies requires creativity, bold thinking, and a willingness to challenge conventional wisdom.
+              </p>
 
-          <p>
-            Today, with AI transforming how businesses operate and compete, thinking differently isn't just inspiring—it's imperative. The technology companies that will thrive are those that embrace new ways of building, scaling, and supporting their GTM teams.
-          </p>
+              <p>
+                Today, with AI transforming how businesses operate and compete, thinking differently isn't just inspiring—it's imperative. The technology companies that will thrive are those that embrace new ways of building, scaling, and supporting their GTM teams.
+              </p>
 
-          <p className="font-semibold text-[var(--black)] text-xl" style={{ marginTop: '1.5rem' }}>
-            We help early-stage B2B technology companies <strong>WORK DIFFERENT</strong>.
-          </p>
-        </div>
-      </div>
-
-      {/* Poster and Target Market Section */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>
-        {/* Poster artwork */}
-        <div>
-          <div
-            className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-4 relative cursor-pointer hover:shadow-[10px_10px_0_var(--black)] transition-shadow"
-            onClick={() => setIsModalOpen(true)}
-            style={{ overflow: 'hidden' }}
-          >
-            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#f4a261' }} />
-            <Image
-              src="/images/IMG_0031.jpeg"
-              alt="Think Different - Apple Campaign Poster"
-              width={300}
-              height={400}
-              className="w-full h-auto"
-              priority
-              quality={95}
-            />
+              <p className="font-semibold text-[var(--black)] text-xl" style={{ marginTop: '1.5rem' }}>
+                We help early-stage B2B technology companies <strong>WORK DIFFERENT</strong>.
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* Target Market sidebar */}
-        <div className="bg-[var(--black)] text-[var(--cream)] p-8 shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
-          <h2 className="font-[var(--font-bebas)] text-2xl tracking-wider mb-8 text-[var(--accent-yellow)] uppercase">
-            Target Market
-          </h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }} className="text-sm">
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Stage
-              </h3>
-              <p style={{ lineHeight: '1.8' }}>$0-20MM ARR</p>
-            </div>
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Market
-              </h3>
-              <p style={{ lineHeight: '1.8' }}>Enterprise</p>
-            </div>
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Domain
-              </h3>
-              <p style={{ lineHeight: '1.8' }}>
-                SDLC, Infrastructure, Cybersecurity, AI, FinTech
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Verticals
-              </h3>
-              <p style={{ lineHeight: '1.8' }}>
-                Banking, Insurance, Financial Services, Pharma, Automotive
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Regions
-              </h3>
-              <p style={{ lineHeight: '1.8' }}>NA, EMEA, APAC</p>
+          {/* Compact poster artwork */}
+          <div style={{ width: '200px', flexShrink: 0 }}>
+            <div
+              className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] p-2 relative cursor-pointer hover:shadow-[8px_8px_0_var(--black)] transition-shadow"
+              onClick={() => setIsModalOpen(true)}
+              style={{ overflow: 'hidden' }}
+            >
+              <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#f4a261' }} />
+              <Image
+                src="/images/IMG_0031.jpeg"
+                alt="Think Different - Apple Campaign Poster"
+                width={200}
+                height={267}
+                className="w-full h-auto"
+                priority
+                quality={90}
+              />
             </div>
           </div>
         </div>
