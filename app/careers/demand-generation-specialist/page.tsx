@@ -94,7 +94,7 @@ export default function DemandGenSpecialist() {
             Client Engagement & Advisory
           </h3>
 
-          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem' }}>
+          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem', listStyle: 'none' }}>
             <li style={{ marginBottom: '0.5rem' }}>Manage multiple concurrent client engagements, each with distinct goals, timelines, and stakeholders.</li>
             <li style={{ marginBottom: '0.5rem' }}>Serve as a trusted demand gen advisor to client marketing leaders — diagnosing gaps, recommending strategies, and driving execution.</li>
             <li style={{ marginBottom: '0.5rem' }}>Ramp quickly into new client environments, learning their ICP, tech stack, and competitive landscape to deliver value fast.</li>
@@ -105,7 +105,7 @@ export default function DemandGenSpecialist() {
             Campaign Strategy & Execution
           </h3>
 
-          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem' }}>
+          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem', listStyle: 'none' }}>
             <li style={{ marginBottom: '0.5rem' }}>Plan, launch, and optimize integrated demand generation campaigns across paid media, email, content syndication, SEO/SEM, webinars, and ABM programs on behalf of clients.</li>
             <li style={{ marginBottom: '0.5rem' }}>Build and manage full-funnel nurture sequences that move prospects from awareness through to sales-qualified pipeline.</li>
             <li style={{ marginBottom: '0.5rem' }}>Advise on campaign budgets and allocate spend based on performance data and pipeline contribution.</li>
@@ -115,7 +115,7 @@ export default function DemandGenSpecialist() {
             AI-Powered Marketing Operations
           </h3>
 
-          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem' }}>
+          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem', listStyle: 'none' }}>
             <li style={{ marginBottom: '0.5rem' }}>Evaluate, implement, and champion AI tools across the demand gen stack — including generative AI for content creation, AI-driven audience segmentation, predictive lead scoring, and automated campaign optimization.</li>
             <li style={{ marginBottom: '0.5rem' }}>Use AI-assisted analytics to surface insights from campaign data, identify high-intent signals, and recommend next-best actions.</li>
             <li style={{ marginBottom: '0.5rem' }}>Build and refine AI-augmented workflows for ad copy generation, A/B testing, personalization at scale, and lead enrichment.</li>
@@ -126,7 +126,7 @@ export default function DemandGenSpecialist() {
             Performance Analysis & Optimization
           </h3>
 
-          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem' }}>
+          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem', listStyle: 'none' }}>
             <li style={{ marginBottom: '0.5rem' }}>Track and report on key demand gen metrics: MQLs, SQLs, pipeline generated, cost-per-lead, conversion rates, and campaign ROI.</li>
             <li style={{ marginBottom: '0.5rem' }}>Design and run experiments (A/B and multivariate) to continuously improve channel performance.</li>
             <li style={{ marginBottom: '0.5rem' }}>Partner with client Revenue Operations teams to ensure clean data flow between marketing automation platforms, CRM, and reporting tools.</li>
@@ -136,7 +136,7 @@ export default function DemandGenSpecialist() {
             Cross-Functional Collaboration
           </h3>
 
-          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem' }}>
+          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem', listStyle: 'none' }}>
             <li style={{ marginBottom: '0.5rem' }}>Embed with client teams and align closely with their Sales, Product Marketing, and RevOps stakeholders.</li>
             <li style={{ marginBottom: '0.5rem' }}>Translate client positioning and messaging into high-converting campaign assets.</li>
             <li style={{ marginBottom: '0.5rem' }}>Collaborate with internal advisory colleagues to share best practices, refine playbooks, and elevate the firm's demand gen methodology.</li>
@@ -150,7 +150,7 @@ export default function DemandGenSpecialist() {
             Experience
           </h3>
 
-          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem' }}>
+          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem', listStyle: 'none' }}>
             <li style={{ marginBottom: '0.5rem' }}>3–5 years of experience in demand generation, growth marketing, or digital marketing — ideally with exposure to multiple B2B SaaS companies, whether through consulting, agency work, or in-house roles across different organizations.</li>
             <li style={{ marginBottom: '0.5rem' }}>Prior consulting, agency, or client services experience strongly preferred — you know how to manage stakeholder expectations, context-switch between engagements, and deliver high-quality work under time pressure.</li>
             <li style={{ marginBottom: '0.5rem' }}>Demonstrated track record of building campaigns that directly contributed to pipeline and revenue targets.</li>
@@ -161,7 +161,7 @@ export default function DemandGenSpecialist() {
             AI & Technology Skills
           </h3>
 
-          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem' }}>
+          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem', listStyle: 'none' }}>
             <li style={{ marginBottom: '0.5rem' }}>Practical, working experience with AI-powered marketing tools — not just awareness, but actual hands-on usage in day-to-day workflows.</li>
             <li style={{ marginBottom: '0.5rem' }}>Familiarity with generative AI platforms (e.g., ChatGPT, Claude, Jasper, Midjourney) for content creation, ideation, and campaign development.</li>
             <li style={{ marginBottom: '0.5rem' }}>Experience using AI for at least two of the following: predictive analytics, audience segmentation, lead scoring, ad optimization, or personalization.</li>
@@ -172,7 +172,7 @@ export default function DemandGenSpecialist() {
             Core Skills
           </h3>
 
-          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem' }}>
+          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem', listStyle: 'none' }}>
             <li style={{ marginBottom: '0.5rem' }}>Strong analytical mindset with the ability to translate data into actionable campaign decisions.</li>
             <li style={{ marginBottom: '0.5rem' }}>Proficiency with paid media platforms (Google Ads, LinkedIn Ads, Meta) and SEO/SEM fundamentals.</li>
             <li style={{ marginBottom: '0.5rem' }}>Working knowledge of leading AI platforms and how they integrate into the marketing stack — including OpenAI (ChatGPT), Anthropic (Claude), Google Gemini, Perplexity, and emerging tools like Copilot, Jasper, and Synthesia.</li>
@@ -186,7 +186,7 @@ export default function DemandGenSpecialist() {
             Nice to Have
           </h2>
 
-          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem' }}>
+          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem', listStyle: 'none' }}>
             <li style={{ marginBottom: '0.5rem' }}>Experience with intent data platforms and buyer signal tools.</li>
             <li style={{ marginBottom: '0.5rem' }}>Familiarity with data enrichment tools (e.g., ZoomInfo, Clearbit, Apollo).</li>
             <li style={{ marginBottom: '0.5rem' }}>Background in building or managing webinar and virtual event programs.</li>
@@ -199,7 +199,7 @@ export default function DemandGenSpecialist() {
             Why Work With Us
           </h2>
 
-          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem' }}>
+          <ul style={{ marginBottom: '1.5rem', paddingLeft: '1.5rem', listStyle: 'none' }}>
             <li style={{ marginBottom: '0.5rem' }}><strong>Variety and growth.</strong> Work across multiple clients, industries, and GTM challenges — no two engagements are the same.</li>
             <li style={{ marginBottom: '0.5rem' }}><strong>Shape the playbook.</strong> You won't just run campaigns — you'll help define how our advisory practice uses AI to build next-generation demand engines for clients.</li>
             <li style={{ marginBottom: '0.5rem' }}><strong>Real impact.</strong> Your work directly drives pipeline and revenue for the companies we advise. Results are visible and measurable.</li>
