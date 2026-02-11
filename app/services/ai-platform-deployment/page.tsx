@@ -66,8 +66,8 @@ export default function AIPlatformDeployment() {
       </p>
 
       {/* The Problem */}
-      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem' }}>
-        <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-yellow)]" />
+      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#f4a261' }} />
         <div style={{ padding: '2.5rem' }}>
           <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-4">
             Most Platform Deployments Fail Because Companies Pick Tools Before Designing Processes
@@ -82,7 +82,7 @@ export default function AIPlatformDeployment() {
       </div>
 
       {/* Our Approach Callout */}
-      <div className="bg-[var(--black)] border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem' }}>
+      <div className="bg-[var(--black)] border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem', overflow: 'hidden' }}>
         <div style={{ padding: '2.5rem', textAlign: 'center' }}>
           <h2 className="font-[var(--font-bebas)] text-4xl tracking-wider uppercase mb-4" style={{ color: '#f4a261' }}>
             We Design Workflows First, Then Select Platforms
@@ -104,16 +104,16 @@ export default function AIPlatformDeployment() {
         <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-6">
           How It Works: 4 Phases
         </h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
           {phases.map((phase) => (
             <div
               key={phase.id}
               className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] hover:shadow-[10px_10px_0_var(--black)] transition-all relative cursor-pointer"
               onMouseEnter={() => setSelectedPhase(phase.id)}
               onMouseLeave={() => setSelectedPhase(null)}
-              style={{ padding: '2rem', minHeight: '260px' }}
+              style={{ padding: '2rem', minHeight: '260px', overflow: 'hidden' }}
             >
-              <div className="absolute top-0 left-0 w-full h-[5px]" style={{ backgroundColor: phase.color }} />
+              <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: phase.color }} />
               <div className="font-[var(--font-bebas)] text-5xl tracking-wider mb-2" style={{ color: phase.color }}>
                 {phase.number}
               </div>
@@ -163,8 +163,8 @@ export default function AIPlatformDeployment() {
       </div>
 
       {/* What You Get */}
-      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem' }}>
-        <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-blue)]" />
+      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#457b9d' }} />
         <div style={{ padding: '2.5rem' }}>
           <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-4">
             What You Get
@@ -200,8 +200,8 @@ export default function AIPlatformDeployment() {
 
       {/* Timeline & Pricing */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
-        <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ padding: '2rem' }}>
-          <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-red)]" />
+        <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ padding: '2rem', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#e63946' }} />
           <h3 className="font-[var(--font-bebas)] text-2xl tracking-wider text-[var(--black)] uppercase mb-3">
             Timeline
           </h3>
@@ -212,8 +212,8 @@ export default function AIPlatformDeployment() {
             Varies based on complexity and number of platforms
           </p>
         </div>
-        <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ padding: '2rem' }}>
-          <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-yellow)]" />
+        <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ padding: '2rem', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#f4a261' }} />
           <h3 className="font-[var(--font-bebas)] text-2xl tracking-wider text-[var(--black)] uppercase mb-3">
             Pricing
           </h3>
@@ -227,8 +227,8 @@ export default function AIPlatformDeployment() {
       </div>
 
       {/* Who This Is For + Blog Link */}
-      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem' }}>
-        <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-blue)]" />
+      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#457b9d' }} />
         <div style={{ padding: '2.5rem' }}>
           <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-4">
             Who This Is For

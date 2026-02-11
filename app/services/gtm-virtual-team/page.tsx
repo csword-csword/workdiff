@@ -90,8 +90,8 @@ export default function GTMVirtualTeam() {
       </p>
 
       {/* The Problem */}
-      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem' }}>
-        <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-red)]" />
+      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#e63946' }} />
         <div style={{ padding: '2.5rem' }}>
           <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-4">
             You Know What to Do. You Just Need Hands to Execute.
@@ -154,10 +154,10 @@ export default function GTMVirtualTeam() {
       </div>
 
       {/* Engagement Model */}
-      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem' }}>
-        <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-blue)]" />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
-          <div style={{ padding: '2rem', borderRight: '2px solid #0a0a0a' }}>
+      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#457b9d' }} />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 0 }}>
+          <div style={{ padding: '2rem', borderRight: '2px solid #0a0a0a', borderBottom: '2px solid #0a0a0a' }}>
             <h3 className="font-[var(--font-bebas)] text-xl tracking-wider text-[var(--black)] uppercase mb-3">
               Commitment
             </h3>
@@ -165,7 +165,7 @@ export default function GTMVirtualTeam() {
               Month-to-month or project-based. No long-term contracts required.
             </p>
           </div>
-          <div style={{ padding: '2rem', borderRight: '2px solid #0a0a0a' }}>
+          <div style={{ padding: '2rem', borderBottom: '2px solid #0a0a0a' }}>
             <h3 className="font-[var(--font-bebas)] text-xl tracking-wider text-[var(--black)] uppercase mb-3">
               Onboarding
             </h3>
@@ -197,14 +197,14 @@ export default function GTMVirtualTeam() {
         <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-6">
           Example Use Cases
         </h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
           {useCases.map((useCase, index) => (
             <div
               key={index}
               className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative"
-              style={{ padding: '2rem', minHeight: '240px' }}
+              style={{ padding: '2rem', minHeight: '240px', overflow: 'hidden' }}
             >
-              <div className="absolute top-0 left-0 w-full h-[5px]" style={{ backgroundColor: useCase.color }} />
+              <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: useCase.color }} />
               <h3 className="font-[var(--font-bebas)] text-xl tracking-wider text-[var(--black)] uppercase mb-3">
                 {useCase.title}
               </h3>
@@ -220,8 +220,8 @@ export default function GTMVirtualTeam() {
       </div>
 
       {/* When to Use This */}
-      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem' }}>
-        <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-yellow)]" />
+      <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#f4a261' }} />
         <div style={{ padding: '2.5rem' }}>
           <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-4">
             When to Use the GTM Virtual Team
