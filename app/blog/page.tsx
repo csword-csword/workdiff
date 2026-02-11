@@ -31,6 +31,24 @@ export default function Blog() {
             </div>
           </a>
 
+          <a href="/blog/scale-readiness-matrix" className="block group">
+            <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] group-hover:shadow-[10px_10px_0_var(--black)] transition-all p-8 relative">
+              <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-yellow)]" />
+
+              <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-4 group-hover:text-[var(--accent-yellow)] transition-colors">
+                The Scale Readiness Matrix: Why Most Companies Invest in Growth at Exactly the Wrong Time
+              </h2>
+
+              <p className="text-[var(--charcoal)] leading-relaxed mb-4">
+                Most early-stage companies fail to scale not because they lack ambition, capital, or talent. They fail because they don't understand where they actually are in their journey — and what that means for how they should invest in growth. Before you hire that VP of Sales or ramp demand gen spend, you need to honestly assess two critical dimensions...
+              </p>
+
+              <span className="text-[var(--accent-yellow)] font-semibold group-hover:underline">
+                Read more →
+              </span>
+            </div>
+          </a>
+
           <a href="/blog/ai-coding-tools-distribution" className="block group">
             <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] group-hover:shadow-[10px_10px_0_var(--black)] transition-all p-8 relative">
               <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-blue)]" />
