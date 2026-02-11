@@ -18,30 +18,30 @@ export default function Careers() {
       </h2>
 
       <div className="space-y-6">
-        <a href="/careers/demand-generation-specialist" className="block group">
-          <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] group-hover:shadow-[10px_10px_0_var(--black)] transition-all p-8 relative">
-            <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-blue)]" />
+        <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] p-8 relative">
+          <div className="absolute top-0 left-0 w-full h-[5px] bg-[var(--accent-blue)]" />
 
-            <h3 className="font-[var(--font-bebas)] text-2xl tracking-wider text-[var(--black)] uppercase mb-3 group-hover:text-[var(--accent-blue)] transition-colors">
+          <a href="/careers/demand-generation-specialist" className="no-underline group">
+            <h3 className="font-[var(--font-bebas)] text-2xl tracking-wider text-[var(--black)] uppercase mb-3 group-hover:text-[var(--accent-blue)] transition-colors inline-block group-hover:underline">
               Demand Generation Specialist
             </h3>
+          </a>
 
-            <p className="text-[var(--charcoal)] mb-2">
-              <strong>Team:</strong> GTM Advisory
-            </p>
-            <p className="text-[var(--charcoal)] mb-4">
-              <strong>Type:</strong> Contract / Consulting
-            </p>
+          <p className="text-[var(--charcoal)] mb-2">
+            <strong>Team:</strong> GTM Advisory
+          </p>
+          <p className="text-[var(--charcoal)] mb-4">
+            <strong>Type:</strong> Contract / Consulting
+          </p>
 
-            <p className="text-[var(--charcoal)] leading-relaxed mb-4">
-              We're looking for a Demand Generation Specialist to join our GTM advisory practice. Work across multiple client engagements, helping B2B SaaS companies build, optimize, and scale their demand generation engines with the latest AI tools.
-            </p>
+          <p className="text-[var(--charcoal)] leading-relaxed mb-4">
+            We're looking for a Demand Generation Specialist to join our GTM advisory practice. Work across multiple client engagements, helping B2B SaaS companies build, optimize, and scale their demand generation engines with the latest AI tools.
+          </p>
 
-            <span className="text-[var(--accent-blue)] font-semibold group-hover:underline">
-              View position details →
-            </span>
-          </div>
-        </a>
+          <a href="/careers/demand-generation-specialist" className="text-[var(--accent-blue)] font-semibold hover:underline no-underline">
+            View position details →
+          </a>
+        </div>
       </div>
     </main>
   );
