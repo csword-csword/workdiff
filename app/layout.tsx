@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${bebasNeue.variable} ${playfairDisplay.variable} ${ibmPlexMono.variable}`}>
-      <body>
+      <body style={{ paddingBottom: '200px' }}>
         <Navigation />
         {children}
         <Footer />
