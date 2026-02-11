@@ -33,6 +33,72 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Poster and Target Market Section */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>
+        {/* Poster artwork */}
+        <div>
+          <div
+            className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-4 relative cursor-pointer hover:shadow-[10px_10px_0_var(--black)] transition-shadow"
+            onClick={() => setIsModalOpen(true)}
+            style={{ overflow: 'hidden' }}
+          >
+            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#f4a261' }} />
+            <Image
+              src="/images/IMG_0031.jpeg"
+              alt="Think Different - Apple Campaign Poster"
+              width={300}
+              height={400}
+              className="w-full h-auto"
+              priority
+              quality={95}
+            />
+          </div>
+        </div>
+
+        {/* Target Market sidebar */}
+        <div className="bg-[var(--black)] text-[var(--cream)] p-8 shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
+          <h2 className="font-[var(--font-bebas)] text-2xl tracking-wider mb-8 text-[var(--accent-yellow)] uppercase">
+            Target Market
+          </h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }} className="text-sm">
+            <div>
+              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
+                Stage
+              </h3>
+              <p style={{ lineHeight: '1.8' }}>$0-20MM ARR</p>
+            </div>
+            <div>
+              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
+                Market
+              </h3>
+              <p style={{ lineHeight: '1.8' }}>Enterprise</p>
+            </div>
+            <div>
+              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
+                Domain
+              </h3>
+              <p style={{ lineHeight: '1.8' }}>
+                SDLC, Infrastructure, Cybersecurity, AI, FinTech
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
+                Verticals
+              </h3>
+              <p style={{ lineHeight: '1.8' }}>
+                Banking, Insurance, Financial Services, Pharma, Automotive
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
+                Regions
+              </h3>
+              <p style={{ lineHeight: '1.8' }}>NA, EMEA, APAC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Featured Insights - Three Column Blog Cards */}
       <div style={{ marginBottom: '4rem' }}>
         <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-6">
@@ -100,72 +166,6 @@ export default function Home() {
               <a href="/blog/autonomous-agents-gtm-readiness" style={{ color: '#457b9d', fontWeight: 600, fontSize: '0.875rem', textDecoration: 'none', marginTop: 'auto' }} className="hover:underline">
                 Read more →
               </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Poster and Target Market Section */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', marginTop: '4rem' }}>
-        {/* Poster artwork */}
-        <div>
-          <div
-            className="bg-white border-3 border-[var(--black)] shadow-[8px_8px_0_var(--black)] p-4 relative cursor-pointer hover:shadow-[10px_10px_0_var(--black)] transition-shadow"
-            onClick={() => setIsModalOpen(true)}
-            style={{ overflow: 'hidden' }}
-          >
-            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#f4a261' }} />
-            <Image
-              src="/images/IMG_0031.jpeg"
-              alt="Think Different - Apple Campaign Poster"
-              width={300}
-              height={400}
-              className="w-full h-auto"
-              priority
-              quality={95}
-            />
-          </div>
-        </div>
-
-        {/* Target Market sidebar */}
-        <div className="bg-[var(--black)] text-[var(--cream)] p-8 shadow-[8px_8px_0_rgba(0,0,0,0.3)]">
-          <h2 className="font-[var(--font-bebas)] text-2xl tracking-wider mb-8 text-[var(--accent-yellow)] uppercase">
-            Target Market
-          </h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }} className="text-sm">
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Stage
-              </h3>
-              <p style={{ lineHeight: '1.8' }}>$0-20MM ARR</p>
-            </div>
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Market
-              </h3>
-              <p style={{ lineHeight: '1.8' }}>Enterprise</p>
-            </div>
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Domain
-              </h3>
-              <p style={{ lineHeight: '1.8' }}>
-                SDLC, Infrastructure, Cybersecurity, AI, FinTech
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Verticals
-              </h3>
-              <p style={{ lineHeight: '1.8' }}>
-                Banking, Insurance, Financial Services, Pharma, Automotive
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-[var(--accent-yellow)] mb-2 font-semibold">
-                Regions
-              </h3>
-              <p style={{ lineHeight: '1.8' }}>NA, EMEA, APAC</p>
             </div>
           </div>
         </div>
