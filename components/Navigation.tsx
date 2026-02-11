@@ -27,6 +27,9 @@ export default function Navigation() {
           </span>
           {showServicesMenu && (
             <div className="submenu">
+              <Link href="/services/gtm-assessment" className="submenu-link">
+                GTM Assessment
+              </Link>
               <Link href="/services/portfolio-companies" className="submenu-link">
                 Portfolio Companies
               </Link>
