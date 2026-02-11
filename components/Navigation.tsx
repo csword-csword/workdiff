@@ -17,6 +17,9 @@ export default function Navigation() {
         <div className="tagline">GTM Advisory Services</div>
       </div>
       <nav className="nav-links">
+        <Link href="/who-we-serve" className={`nav-link ${pathname === "/who-we-serve" ? "active" : ""}`}>
+          Who We Serve
+        </Link>
         <div
           className="nav-link-wrapper"
           onMouseEnter={() => setShowServicesMenu(true)}
@@ -45,9 +48,6 @@ export default function Navigation() {
             </div>
           )}
         </div>
-        <Link href="/who-we-serve" className={`nav-link ${pathname === "/who-we-serve" ? "active" : ""}`}>
-          Who We Serve
-        </Link>
         <Link href="/blog" className={`nav-link ${pathname === "/blog" ? "active" : ""}`}>
           Blog
         </Link>
