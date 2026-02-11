@@ -226,12 +226,12 @@ body::before {
   position: absolute;
   top: 100%;
   left: 0;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   padding-top: 0.75rem;
   background: var(--cream);
   border: 3px solid var(--black);
   box-shadow: 4px 4px 0 var(--black);
-  min-width: 220px;
+  min-width: 280px;
   z-index: 100;
 }
 
@@ -239,9 +239,9 @@ body::before {
 .submenu::before {
   content: '';
   position: absolute;
-  top: -1.5rem;
-  left: -1rem;
-  right: -1rem;
+  top: -1rem;
+  left: -2rem;
+  right: -2rem;
   height: 1.5rem;
   background: transparent;
 }

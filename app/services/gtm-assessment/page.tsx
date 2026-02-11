@@ -157,6 +157,13 @@ export default function GTMAssessment() {
             <li style={{ marginBottom: '0.5rem' }}><strong>Founders and GTM leaders</strong> who need an objective diagnosis before making big hiring or spending decisions</li>
           </ul>
 
+          <div style={{ background: 'var(--cream)', padding: '1.5rem', borderLeft: '3px solid var(--accent-blue)', marginBottom: '1.5rem' }}>
+            <p style={{ marginBottom: '0.5rem', fontWeight: 600 }}>Related Reading:</p>
+            <a href="/blog/early-stage-gtm-peril" className="text-[var(--accent-blue)] hover:underline" style={{ fontSize: '0.95rem' }}>
+              The $2M-$10M Peril: Why Most Startups Fail to Scale GTM →
+            </a>
+          </div>
+
           <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase" style={{ marginTop: '2.5rem', marginBottom: '1rem' }}>
             Timeline & Engagement
           </h2>
