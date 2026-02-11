@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bebas_Neue, Playfair_Display, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

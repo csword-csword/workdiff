@@ -186,7 +186,7 @@ export default function GTMAssessment() {
 
           <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '2px solid var(--slate)' }}>
             <p className="text-[var(--charcoal)]" style={{ fontStyle: 'italic' }}>
-              Ready to understand where you really are? <a href="/contact" className="text-[var(--accent-blue)] hover:underline">Contact us</a> to schedule a GTM Assessment.
+              Ready to understand where you really are? <a href="mailto:charles@workdifferent.services" className="text-[var(--accent-blue)] hover:underline">Contact us</a> to schedule a GTM Assessment.
             </p>
           </div>
         </div>
