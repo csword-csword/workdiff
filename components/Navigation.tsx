@@ -34,7 +34,7 @@ export default function Navigation() {
                 GTM Assessment
               </Link>
               <Link href="/services/geo-optimization" className="submenu-link">
-                GEO Optimization
+                Generative Engine Optimization
               </Link>
               <Link href="/services/ai-platform-deployment" className="submenu-link">
                 AI-First Platform Deployment
