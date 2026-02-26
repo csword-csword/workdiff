@@ -3,77 +3,59 @@
 import { useState } from "react";
 import Link from "next/link";
 
-export default function GTMVirtualTeam() {
+export default function GTMServiceBureau() {
   const [selectedRole, setSelectedRole] = useState<string | null>(null);
 
   const roles = [
     {
-      id: "sdrs",
-      title: "Sales Development Reps",
-      description: "Prospect, qualify, and book meetings for your AE team",
-      details: "AI writes personalized outreach at scale, enriches lead data, scores prospects, and suggests optimal call times"
+      id: "cro",
+      title: "Fractional CRO",
+      description: "Revenue strategy, sales leadership, and GTM alignment",
+      details: "AI-powered forecasting, pipeline analytics, and data-driven revenue planning without the $300K+ salary"
     },
     {
-      id: "aes",
-      title: "Account Executives",
-      description: "Run discovery, demos, and close deals in your sales process",
-      details: "AI drafts proposals, analyzes calls, surfaces coaching insights, and automates CRM updates"
+      id: "marketing",
+      title: "Marketing",
+      description: "Demand generation, content, campaigns, and brand",
+      details: "AI generates campaign copy, automates audience segmentation, powers A/B testing, and accelerates content production at 2-3x speed"
     },
     {
-      id: "csms",
-      title: "Customer Success Managers",
-      description: "Drive onboarding, adoption, retention, and expansion",
-      details: "AI generates QBR decks, flags churn risk, identifies expansion opportunities, and drafts renewal emails"
+      id: "bdr",
+      title: "Business Development",
+      description: "Prospect, qualify, and build pipeline for your sales team",
+      details: "AI writes personalized outreach at scale, enriches lead data, scores prospects, and suggests optimal engagement sequences"
     },
     {
-      id: "demand-gen",
-      title: "Demand Generation",
-      description: "Build and optimize campaigns, manage paid channels, drive pipeline",
-      details: "AI generates ad copy and email sequences, powers audience segmentation, and automates A/B testing"
-    },
-    {
-      id: "revops",
-      title: "Revenue Operations",
-      description: "Build dashboards, manage CRM hygiene, optimize processes",
-      details: "AI builds forecasts, detects data quality issues, and surfaces insights from sales and marketing data"
-    },
-    {
-      id: "marketing-ops",
-      title: "Marketing Operations",
-      description: "Manage marketing automation, campaign ops, and lead routing",
-      details: "AI optimizes workflows, automates campaign execution, and improves lead scoring"
-    },
-    {
-      id: "content",
-      title: "Content & Enablement",
-      description: "Create sales collateral, case studies, and training materials",
-      details: "AI accelerates content creation, generates multiple variants, and maintains brand consistency"
+      id: "cs",
+      title: "Customer Success",
+      description: "Drive onboarding, adoption, retention, and expansion revenue",
+      details: "AI generates QBR decks, flags churn risk, identifies expansion opportunities, and automates health scoring"
     }
   ];
 
   const useCases = [
     {
-      title: "Post-Assessment Execution",
-      scenario: "You completed a GTM Assessment with a roadmap to launch ABM, build a sales playbook, and implement health scoring.",
-      solution: "Deploy Demand Gen Specialist (20 hrs/week), Sales Enablement Specialist (10 hrs/week), and RevOps Analyst (15 hrs/week) for 3 months.",
+      title: "Post-Seed Execution",
+      scenario: "You just raised your Seed round and need to prove product-market fit. You can't afford a full GTM team, but you need pipeline now.",
+      solution: "Deploy fractional BDR and Marketing resources to build your first repeatable pipeline motion while you stay focused on product.",
       color: "#e63946"
     },
     {
-      title: "Scaling Outbound While Hiring",
-      scenario: "You're hiring a VP of Sales but need pipeline now. You don't want to hire SDRs until the VP is in place.",
-      solution: "Deploy 2 fractional SDRs (40 hrs/week each) to generate pipeline while you recruit. Transition them once VP is hired.",
+      title: "Series A Scaling",
+      scenario: "You're past $1M ARR and need to accelerate, but hiring a VP Sales, marketing team, and SDRs simultaneously would burn 60% of your raise.",
+      solution: "Deploy a fractional CRO to build the playbook, BDRs to generate pipeline, and Marketing to drive inbound — all at a fraction of FTE cost.",
       color: "#f4a261"
     },
     {
-      title: "Seasonal Campaign Support",
-      scenario: "You're launching a major product release with a multi-channel campaign. Your marketing team is slammed.",
-      solution: "Deploy Demand Gen Specialist (40 hrs/week) for 8 weeks to plan, execute, and optimize the campaign.",
+      title: "Bridge to $10M ARR",
+      scenario: "You're at $3-5M ARR and need to scale revenue without scaling headcount proportionally. Board wants capital efficiency.",
+      solution: "Layer in fractional CS to protect revenue and Marketing to scale demand gen. Convert to FTE hires only after hitting $10M ARR.",
       color: "#457b9d"
     },
     {
-      title: "Customer Success Backfill",
-      scenario: "Your CSM just quit and you have 50 at-risk accounts with renewals in 60 days.",
-      solution: "Deploy fractional CSM (40 hrs/week) to run renewals, QBRs, and manage escalations while you recruit.",
+      title: "Portfolio-Wide Deployment",
+      scenario: "You're a VC with 5-10 portfolio companies pre-$10M ARR. Each needs GTM help but none can justify full-time hires.",
+      solution: "Shared Service Bureau model across the portfolio — each company gets the GTM coverage they need, with cost distributed efficiently.",
       color: "#4a5568"
     }
   ];
@@ -83,10 +65,10 @@ export default function GTMVirtualTeam() {
       <div className="h-1 w-40 bg-[var(--accent-red)] mb-12 animate-[expandLine_1s_ease-out_0.5s_both]" />
 
       <h1 className="font-[var(--font-bebas)] text-5xl tracking-wider text-[var(--black)] uppercase mb-3" style={{ lineHeight: '1.1' }}>
-        GTM Virtual Team
+        GTM Service Bureau
       </h1>
       <p className="text-lg text-[var(--charcoal)] mb-12" style={{ lineHeight: '1.6' }}>
-        Highly specialized, AI-adept fractional resources to support execution across all GTM roles
+        Fractional, AI-adept resources across all GTM roles — scales with the business until you're ready for FTE hires
       </p>
 
       {/* The Problem */}
@@ -94,41 +76,50 @@ export default function GTMVirtualTeam() {
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#e63946' }} />
         <div style={{ padding: '2.5rem' }}>
           <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-4">
-            You Know What to Do. You Just Need Hands to Execute.
+            The Problem: GTM Overhead Kills Early-Stage Companies
           </h2>
-          <p style={{ marginBottom: '1.5rem', fontSize: '1.1rem', lineHeight: '1.7', color: '#2a2a2a' }}>
-            You've built the strategy, deployed the tools, and documented the processes. But you don't have enough hands to execute—or the budget to hire a full team.
-          </p>
-          <p style={{ fontSize: '1.1rem', lineHeight: '1.7', color: '#2a2a2a' }}>
-            We provide <strong>AI-native fractional resources</strong> who embed with your team to drive execution across marketing, sales, customer success, and revenue operations. Think of us as an extension of your GTM org—without the overhead, onboarding lag, or long-term commitments.
-          </p>
+          <ul style={{ paddingLeft: 0, listStyle: 'none', margin: 0 }}>
+            <li style={{ padding: '0.75rem 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#2a2a2a', borderBottom: '1px solid #e5e7eb', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
+              <span style={{ color: '#e63946', fontWeight: 'bold', flexShrink: 0 }}>—</span>
+              Most startups yield poor returns on early GTM spend — <strong>overhead is disproportionately high before $10M ARR</strong>
+            </li>
+            <li style={{ padding: '0.75rem 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#2a2a2a', borderBottom: '1px solid #e5e7eb', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
+              <span style={{ color: '#e63946', fontWeight: 'bold', flexShrink: 0 }}>—</span>
+              Even a minimalist legacy GTM org costs often <strong>exceed 50% of newly generated ARR</strong>
+            </li>
+            <li style={{ padding: '0.75rem 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#2a2a2a', borderBottom: '1px solid #e5e7eb', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
+              <span style={{ color: '#e63946', fontWeight: 'bold', flexShrink: 0 }}>—</span>
+              Time in the <strong>"danger zone"</strong> between first hire and scalable revenue is the critical survival factor
+            </li>
+            <li style={{ padding: '0.75rem 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#2a2a2a', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
+              <span style={{ color: '#e63946', fontWeight: 'bold', flexShrink: 0 }}>—</span>
+              AI capabilities evolve weekly, but most teams lack expertise to leverage them for GTM execution
+            </li>
+          </ul>
         </div>
       </div>
 
-      {/* AI Productivity Advantage */}
+      {/* AI-First GTM Advantage */}
       <div className="bg-[var(--black)] border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] relative" style={{ marginBottom: '3rem' }}>
         <div style={{ padding: '2.5rem', textAlign: 'center' }}>
-          <h2 className="font-[var(--font-bebas)] text-4xl tracking-wider uppercase mb-4" style={{ color: '#f4a261' }}>
-            2-3x Productivity Through AI
-          </h2>
-          <p style={{ fontSize: '1.2rem', lineHeight: '1.7', maxWidth: '800px', margin: '0 auto', marginBottom: '1rem', color: '#ffffff' }}>
-            Traditional fractional resources operate at 1x productivity. Our team operates at <strong>2-3x</strong> because they're trained to leverage AI across every part of their workflow.
+          <p style={{ fontSize: '1rem', color: '#ffffff', textTransform: 'uppercase', letterSpacing: '0.15rem', marginBottom: '0.5rem' }}>
+            AI-First GTM Strategies Yield
           </p>
-          <Link
-            href="/blog/ai-coding-tools-distribution"
-            style={{ display: 'inline-block', color: '#f4a261', fontSize: '0.95rem', marginTop: '1rem', textDecoration: 'underline' }}
-          >
-            Read: The AI Agent Is The New Buyer →
-          </Link>
+          <h2 className="font-[var(--font-bebas)] text-5xl tracking-wider uppercase mb-2" style={{ color: '#f4a261' }}>
+            Up to 66% Reduction in GTM Overhead
+          </h2>
+          <p style={{ fontSize: '1.2rem', lineHeight: '1.7', maxWidth: '700px', margin: '0 auto', color: '#ffffff' }}>
+            1.5–2x productivity · 50% more ARR quota per dollar
+          </p>
         </div>
       </div>
 
-      {/* Available Roles */}
+      {/* On-Demand Coverage */}
       <div style={{ marginBottom: '3rem' }}>
         <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-6">
-          Available Roles
+          On-Demand Coverage Across All GTM Roles
         </h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem' }}>
           {roles.map((role) => (
             <div
               key={role.id}
@@ -159,43 +150,43 @@ export default function GTMVirtualTeam() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 0 }}>
           <div style={{ padding: '2rem', borderRight: '2px solid #0a0a0a', borderBottom: '2px solid #0a0a0a' }}>
             <h3 className="font-[var(--font-bebas)] text-xl tracking-wider text-[var(--black)] uppercase mb-3">
-              Commitment
+              Fractional by Design
             </h3>
             <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: '#2a2a2a' }}>
-              Month-to-month or project-based. No long-term contracts required.
+              CRO, Marketing, BDR, and CS coverage on demand. No full-time commitment until you're ready.
             </p>
           </div>
           <div style={{ padding: '2rem', borderBottom: '2px solid #0a0a0a' }}>
             <h3 className="font-[var(--font-bebas)] text-xl tracking-wider text-[var(--black)] uppercase mb-3">
-              Onboarding
+              AI-Adept Resources
             </h3>
             <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: '#2a2a2a' }}>
-              1-2 weeks to ramp into your tools, processes, and team.
+              Every resource is trained on AI-native workflows — delivering 1.5-2x the output of traditional hires.
             </p>
           </div>
           <div style={{ padding: '2rem', borderRight: '2px solid #0a0a0a' }}>
             <h3 className="font-[var(--font-bebas)] text-xl tracking-wider text-[var(--black)] uppercase mb-3">
-              Management
+              Scales With You
             </h3>
             <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: '#2a2a2a' }}>
-              Resources report to you and embed with your team.
+              Start lean, add roles as needed, and transition to FTE hires post $10M ARR.
             </p>
           </div>
           <div style={{ padding: '2rem' }}>
             <h3 className="font-[var(--font-bebas)] text-xl tracking-wider text-[var(--black)] uppercase mb-3">
-              Pricing
+              Embedded, Not Outsourced
             </h3>
             <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: '#2a2a2a' }}>
-              Transparent hourly or monthly rates based on role and commitment.
+              Resources report to you and operate as part of your team — not a black-box agency.
             </p>
           </div>
         </div>
       </div>
 
-      {/* Example Use Cases */}
+      {/* Use Cases */}
       <div style={{ marginBottom: '3rem' }}>
         <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-6">
-          Example Use Cases
+          Common Deployment Scenarios
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
           {useCases.map((useCase, index) => (
@@ -224,26 +215,26 @@ export default function GTMVirtualTeam() {
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#f4a261' }} />
         <div style={{ padding: '2.5rem' }}>
           <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-4">
-            When to Use the GTM Virtual Team
+            When to Deploy the GTM Service Bureau
           </h2>
           <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem', paddingLeft: 0, listStyle: 'none' }}>
             <li style={{ padding: '1rem', borderLeft: '3px solid #e63946', color: '#2a2a2a' }}>
-              You've completed a <strong>GTM Assessment</strong> and need hands to execute the roadmap
+              You're <strong>pre-$10M ARR</strong> and can't justify full GTM headcount
             </li>
             <li style={{ padding: '1rem', borderLeft: '3px solid #f4a261', color: '#2a2a2a' }}>
-              You've deployed new platforms and need operators to run them
+              GTM overhead is <strong>eating more than 50%</strong> of newly generated ARR
             </li>
             <li style={{ padding: '1rem', borderLeft: '3px solid #457b9d', color: '#2a2a2a' }}>
-              You're between hires and need coverage while you recruit
+              You need to <strong>accelerate the path to $10M ARR</strong> with a leaner team
             </li>
             <li style={{ padding: '1rem', borderLeft: '3px solid #4a5568', color: '#2a2a2a' }}>
-              You have seasonal demand spikes (launches, campaigns, end-of-quarter)
+              Your board wants <strong>capital efficiency</strong> on go-to-market spend
             </li>
             <li style={{ padding: '1rem', borderLeft: '3px solid #e63946', color: '#2a2a2a' }}>
-              You need specialized skills your team doesn't have
+              You want to <strong>embed AI-first GTM practices</strong> from day one
             </li>
             <li style={{ padding: '1rem', borderLeft: '3px solid #f4a261', color: '#2a2a2a' }}>
-              You want to test a new GTM motion before committing to full-time headcount
+              You're a <strong>VC looking to reduce burn rate</strong> across portfolio companies
             </li>
           </ul>
         </div>
@@ -252,7 +243,7 @@ export default function GTMVirtualTeam() {
       {/* CTA */}
       <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '2px solid #4a5568', textAlign: 'center' }}>
         <p style={{ fontStyle: 'italic', fontSize: '1.1rem', marginBottom: '1.5rem', color: '#2a2a2a' }}>
-          Ready to augment your GTM team with AI-adept specialists?
+          Ready to build a lean, AI-powered GTM engine?
         </p>
         <a
           href="mailto:charles@workdifferent.services"
@@ -270,7 +261,7 @@ export default function GTMVirtualTeam() {
             textDecoration: 'none'
           }}
         >
-          Contact Us
+          Let's Talk
         </a>
       </div>
     </main>
