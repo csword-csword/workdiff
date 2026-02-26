@@ -26,6 +26,12 @@ export default function GTMServiceBureau() {
       details: "AI writes personalized outreach at scale, enriches lead data, scores prospects, and suggests optimal engagement sequences"
     },
     {
+      id: "sales",
+      title: "Sales",
+      description: "Fractional AEs to run deals, close revenue, and build your sales playbook",
+      details: "AI-assisted demo prep, proposal generation, competitive intel briefings, and deal coaching — giving fractional AEs the output of a full sales team"
+    },
+    {
       id: "cs",
       title: "Customer Success",
       description: "Drive onboarding, adoption, retention, and expansion revenue",
@@ -78,24 +84,12 @@ export default function GTMServiceBureau() {
           <h2 className="font-[var(--font-bebas)] text-3xl tracking-wider text-[var(--black)] uppercase mb-4">
             The Problem: GTM Overhead Kills Early-Stage Companies
           </h2>
-          <ul style={{ paddingLeft: 0, listStyle: 'none', margin: 0 }}>
-            <li style={{ padding: '0.75rem 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#2a2a2a', borderBottom: '1px solid #e5e7eb', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
-              <span style={{ color: '#e63946', fontWeight: 'bold', flexShrink: 0 }}>—</span>
-              Most startups yield poor returns on early GTM spend — <strong>overhead is disproportionately high before $10M ARR</strong>
-            </li>
-            <li style={{ padding: '0.75rem 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#2a2a2a', borderBottom: '1px solid #e5e7eb', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
-              <span style={{ color: '#e63946', fontWeight: 'bold', flexShrink: 0 }}>—</span>
-              Even a minimalist legacy GTM org costs often <strong>exceed 50% of newly generated ARR</strong>
-            </li>
-            <li style={{ padding: '0.75rem 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#2a2a2a', borderBottom: '1px solid #e5e7eb', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
-              <span style={{ color: '#e63946', fontWeight: 'bold', flexShrink: 0 }}>—</span>
-              Time in the <strong>"danger zone"</strong> between first hire and scalable revenue is the critical survival factor
-            </li>
-            <li style={{ padding: '0.75rem 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#2a2a2a', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
-              <span style={{ color: '#e63946', fontWeight: 'bold', flexShrink: 0 }}>—</span>
-              AI capabilities evolve weekly, but most teams lack expertise to leverage them for GTM execution
-            </li>
-          </ul>
+          <p style={{ marginBottom: '1.5rem', fontSize: '1.1rem', lineHeight: '1.7', color: '#2a2a2a' }}>
+            Most startups yield poor returns on early GTM spend. Overhead is disproportionately high before $10M ARR, and even a minimalist legacy GTM org often costs <strong>more than 50% of newly generated ARR</strong>.
+          </p>
+          <p style={{ fontSize: '1.1rem', lineHeight: '1.7', color: '#2a2a2a' }}>
+            The time in the <strong>"danger zone"</strong> between first hire and scalable revenue is the critical survival factor. Meanwhile, AI capabilities evolve weekly — but most teams lack the expertise to leverage them for GTM execution.
+          </p>
         </div>
       </div>
 
