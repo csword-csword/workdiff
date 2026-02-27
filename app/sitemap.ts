@@ -102,6 +102,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: `${BASE_URL}/blog/ai-agents-rewriting-gtm-roles`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
     // Careers
     {
       url: `${BASE_URL}/careers`,
