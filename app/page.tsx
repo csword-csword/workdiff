@@ -85,22 +85,22 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Article 2 - Scale Readiness Matrix */}
+          {/* Article 2 - From Playbooks to Platforms */}
           <div className="bg-white border-3 border-[var(--black)] shadow-[6px_6px_0_var(--black)] hover:shadow-[10px_10px_0_var(--black)] transition-all relative" style={{ overflow: 'hidden', minHeight: '320px', display: 'flex', flexDirection: 'column' }}>
             <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', backgroundColor: '#f4a261' }} />
 
             <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
-              <a href="/blog/scale-readiness-matrix" style={{ textDecoration: 'none', marginBottom: '1rem' }}>
+              <a href="/blog/ai-agents-rewriting-gtm-roles" style={{ textDecoration: 'none', marginBottom: '1rem' }}>
                 <h3 className="font-[var(--font-bebas)] text-2xl tracking-wider text-[var(--black)] uppercase hover:text-[var(--accent-yellow)] transition-colors" style={{ lineHeight: '1.2' }}>
-                  The Scale Readiness Matrix
+                  From Playbooks to Platforms
                 </h3>
               </a>
 
               <p style={{ color: '#2a2a2a', lineHeight: '1.6', marginBottom: '1.5rem', fontSize: '0.9rem', flex: 1 }}>
-                Why most companies invest in growth at exactly the wrong time—and how to know whether you should fix, build repeatability, or scale.
+                AI agents are redefining BDR and AE roles — from individual contributors executing playbooks to operators overseeing fleets of digital workers. The job description is changing.
               </p>
 
-              <a href="/blog/scale-readiness-matrix" style={{ color: '#f4a261', fontWeight: 600, fontSize: '0.875rem', textDecoration: 'none', marginTop: 'auto' }} className="hover:underline">
+              <a href="/blog/ai-agents-rewriting-gtm-roles" style={{ color: '#f4a261', fontWeight: 600, fontSize: '0.875rem', textDecoration: 'none', marginTop: 'auto' }} className="hover:underline">
                 Read more →
               </a>
             </div>
